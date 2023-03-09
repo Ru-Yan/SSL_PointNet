@@ -1,0 +1,5530 @@
+Namespace(batch_size='2,3', bn_decay_rate=0.5, bn_decay_step=20, cls_number=10, conf_thresh=0.05, dataset='sunrgbd', detector_checkpoint='none', ema_decay=0.999, eval=False, eval_interval=5, learning_rate=0.01, log_dir='./temp', lr_decay_rates='0.3, 0.3, 0.1, 0.1', lr_decay_steps='400, 600, 800, 900', max_epoch=1001, model='Pointnet2SSG', num_point=20000, print_interval=25, resume=False, save_interval=200, unlabeled_loss_weight=2.0, weight_decay=0)
+unlabeled_batch_size: 3
+dataset: sunrgbd
+remove_empty_box: False
+use_3d_nms: True
+nms_iou: 0.25
+use_old_type_nms: False
+cls_nms: True
+per_class_proposal: True
+conf_thresh: 0.05
+obj_threshold: 0.9
+cls_threshold: 0.9
+use_lhs: True
+iou_threshold: 0.25
+use_unlabeled_obj_loss: False
+use_unlabeled_vote_loss: False
+vote_loss_size_factor: 1.0
+samecls_match: False
+
+**** EPOCH 000, STEP 0 ****
+Current epoch: 0, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:12:12.238504
+ ---- batch: 025 ----
+mean label_acc: 0.688928
+mean label_loss: 1.021759
+mean loss: 2.298450
+
+**** EPOCH 001, STEP 25 ****
+Current epoch: 1, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:12:19.336843
+ ---- batch: 025 ----
+mean label_acc: 0.767679
+mean label_loss: 0.637059
+mean loss: 1.757364
+
+**** EPOCH 002, STEP 50 ****
+Current epoch: 2, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:12:25.984457
+ ---- batch: 025 ----
+mean label_acc: 0.753753
+mean label_loss: 0.648882
+mean loss: 1.759289
+
+**** EPOCH 003, STEP 75 ****
+Current epoch: 3, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:12:32.816308
+ ---- batch: 025 ----
+mean label_acc: 0.751873
+mean label_loss: 0.649651
+mean loss: 1.766138
+
+**** EPOCH 004, STEP 100 ****
+Current epoch: 4, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:12:39.685801
+ ---- batch: 025 ----
+mean label_acc: 0.774993
+mean label_loss: 0.606103
+mean loss: 1.722124
+
+**** EPOCH 005, STEP 125 ****
+Current epoch: 5, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:12:46.402698
+ ---- batch: 025 ----
+mean label_acc: 0.773878
+mean label_loss: 0.632902
+mean loss: 1.749333
+eval mean test_label_acc: 0.789285
+
+**** EPOCH 006, STEP 150 ****
+Current epoch: 6, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:12:53.912425
+ ---- batch: 025 ----
+mean label_acc: 0.784108
+mean label_loss: 0.619506
+mean loss: 1.712942
+
+**** EPOCH 007, STEP 175 ****
+Current epoch: 7, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:13:00.668874
+ ---- batch: 025 ----
+mean label_acc: 0.770297
+mean label_loss: 0.635088
+mean loss: 1.728452
+
+**** EPOCH 008, STEP 200 ****
+Current epoch: 8, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:13:07.295250
+ ---- batch: 025 ----
+mean label_acc: 0.766680
+mean label_loss: 0.626679
+mean loss: 1.721311
+
+**** EPOCH 009, STEP 225 ****
+Current epoch: 9, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:13:14.359571
+ ---- batch: 025 ----
+mean label_acc: 0.770557
+mean label_loss: 0.656189
+mean loss: 1.764337
+
+**** EPOCH 010, STEP 250 ****
+Current epoch: 10, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:13:21.254534
+ ---- batch: 025 ----
+mean label_acc: 0.758564
+mean label_loss: 0.658703
+mean loss: 1.784998
+eval mean test_label_acc: 0.744350
+
+**** EPOCH 011, STEP 275 ****
+Current epoch: 11, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:13:28.869348
+ ---- batch: 025 ----
+mean label_acc: 0.766578
+mean label_loss: 0.643776
+mean loss: 1.748670
+
+**** EPOCH 012, STEP 300 ****
+Current epoch: 12, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:13:35.675244
+ ---- batch: 025 ----
+mean label_acc: 0.765960
+mean label_loss: 0.655936
+mean loss: 1.758502
+
+**** EPOCH 013, STEP 325 ****
+Current epoch: 13, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:13:42.850428
+ ---- batch: 025 ----
+mean label_acc: 0.766778
+mean label_loss: 0.639011
+mean loss: 1.727786
+
+**** EPOCH 014, STEP 350 ****
+Current epoch: 14, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:13:49.814944
+ ---- batch: 025 ----
+mean label_acc: 0.766821
+mean label_loss: 0.627807
+mean loss: 1.709713
+
+**** EPOCH 015, STEP 375 ****
+Current epoch: 15, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:13:56.774671
+ ---- batch: 025 ----
+mean label_acc: 0.787759
+mean label_loss: 0.611076
+mean loss: 1.708364
+eval mean test_label_acc: 0.778430
+
+**** EPOCH 016, STEP 400 ****
+Current epoch: 16, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:14:04.742565
+ ---- batch: 025 ----
+mean label_acc: 0.790047
+mean label_loss: 0.600245
+mean loss: 1.673357
+
+**** EPOCH 017, STEP 425 ****
+Current epoch: 17, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:14:11.528755
+ ---- batch: 025 ----
+mean label_acc: 0.796317
+mean label_loss: 0.579887
+mean loss: 1.648876
+
+**** EPOCH 018, STEP 450 ****
+Current epoch: 18, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:14:18.368770
+ ---- batch: 025 ----
+mean label_acc: 0.780825
+mean label_loss: 0.596404
+mean loss: 1.669514
+
+**** EPOCH 019, STEP 475 ****
+Current epoch: 19, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:14:25.206041
+ ---- batch: 025 ----
+mean label_acc: 0.784711
+mean label_loss: 0.599368
+mean loss: 1.673657
+
+**** EPOCH 020, STEP 500 ****
+Current epoch: 20, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:14:32.077305
+ ---- batch: 025 ----
+mean label_acc: 0.793472
+mean label_loss: 0.582599
+mean loss: 1.656481
+eval mean test_label_acc: 0.816585
+
+**** EPOCH 021, STEP 525 ****
+Current epoch: 21, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:14:39.925513
+ ---- batch: 025 ----
+mean label_acc: 0.791072
+mean label_loss: 0.591490
+mean loss: 1.654454
+
+**** EPOCH 022, STEP 550 ****
+Current epoch: 22, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:14:46.704179
+ ---- batch: 025 ----
+mean label_acc: 0.794069
+mean label_loss: 0.576434
+mean loss: 1.650298
+
+**** EPOCH 023, STEP 575 ****
+Current epoch: 23, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:14:53.575378
+ ---- batch: 025 ----
+mean label_acc: 0.792954
+mean label_loss: 0.579792
+mean loss: 1.661117
+
+**** EPOCH 024, STEP 600 ****
+Current epoch: 24, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:15:00.373117
+ ---- batch: 025 ----
+mean label_acc: 0.784449
+mean label_loss: 0.594125
+mean loss: 1.673190
+
+**** EPOCH 025, STEP 625 ****
+Current epoch: 25, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:15:07.310312
+ ---- batch: 025 ----
+mean label_acc: 0.794372
+mean label_loss: 0.576921
+mean loss: 1.661698
+eval mean test_label_acc: 0.803540
+
+**** EPOCH 026, STEP 650 ****
+Current epoch: 26, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:15:15.163756
+ ---- batch: 025 ----
+mean label_acc: 0.794277
+mean label_loss: 0.573989
+mean loss: 1.649126
+
+**** EPOCH 027, STEP 675 ****
+Current epoch: 27, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:15:22.246420
+ ---- batch: 025 ----
+mean label_acc: 0.783080
+mean label_loss: 0.611738
+mean loss: 1.680992
+
+**** EPOCH 028, STEP 700 ****
+Current epoch: 28, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:15:29.151588
+ ---- batch: 025 ----
+mean label_acc: 0.792571
+mean label_loss: 0.607286
+mean loss: 1.673519
+
+**** EPOCH 029, STEP 725 ****
+Current epoch: 29, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:15:36.024793
+ ---- batch: 025 ----
+mean label_acc: 0.791620
+mean label_loss: 0.604303
+mean loss: 1.675070
+
+**** EPOCH 030, STEP 750 ****
+Current epoch: 30, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:15:43.192604
+ ---- batch: 025 ----
+mean label_acc: 0.787994
+mean label_loss: 0.608035
+mean loss: 1.680780
+eval mean test_label_acc: 0.813055
+
+**** EPOCH 031, STEP 775 ****
+Current epoch: 31, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:15:51.189479
+ ---- batch: 025 ----
+mean label_acc: 0.780377
+mean label_loss: 0.604223
+mean loss: 1.695497
+
+**** EPOCH 032, STEP 800 ****
+Current epoch: 32, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:15:58.217618
+ ---- batch: 025 ----
+mean label_acc: 0.792507
+mean label_loss: 0.593802
+mean loss: 1.681940
+
+**** EPOCH 033, STEP 825 ****
+Current epoch: 33, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:16:05.159000
+ ---- batch: 025 ----
+mean label_acc: 0.789569
+mean label_loss: 0.581163
+mean loss: 1.665211
+
+**** EPOCH 034, STEP 850 ****
+Current epoch: 34, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:16:12.112415
+ ---- batch: 025 ----
+mean label_acc: 0.776499
+mean label_loss: 0.602124
+mean loss: 1.692434
+
+**** EPOCH 035, STEP 875 ****
+Current epoch: 35, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:16:19.034674
+ ---- batch: 025 ----
+mean label_acc: 0.788609
+mean label_loss: 0.586728
+mean loss: 1.665397
+eval mean test_label_acc: 0.816165
+
+**** EPOCH 036, STEP 900 ****
+Current epoch: 36, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:16:26.876983
+ ---- batch: 025 ----
+mean label_acc: 0.764847
+mean label_loss: 0.625033
+mean loss: 1.710723
+
+**** EPOCH 037, STEP 925 ****
+Current epoch: 37, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:16:34.194808
+ ---- batch: 025 ----
+mean label_acc: 0.767862
+mean label_loss: 0.629005
+mean loss: 1.720508
+
+**** EPOCH 038, STEP 950 ****
+Current epoch: 38, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:16:41.427416
+Namespace(batch_size='2,3', bn_decay_rate=0.5, bn_decay_step=20, cls_number=10, conf_thresh=0.05, dataset='sunrgbd', detector_checkpoint='none', ema_decay=0.999, eval=False, eval_interval=5, learning_rate=0.01, log_dir='./temp', lr_decay_rates='0.3, 0.3, 0.1, 0.1', lr_decay_steps='400, 600, 800, 900', max_epoch=1001, model='Pointnet2SSG', num_point=20000, print_interval=25, resume=False, save_interval=200, unlabeled_loss_weight=2.0, weight_decay=0)
+unlabeled_batch_size: 3
+dataset: sunrgbd
+remove_empty_box: False
+use_3d_nms: True
+nms_iou: 0.25
+use_old_type_nms: False
+cls_nms: True
+per_class_proposal: True
+conf_thresh: 0.05
+obj_threshold: 0.9
+cls_threshold: 0.9
+use_lhs: True
+iou_threshold: 0.25
+use_unlabeled_obj_loss: False
+use_unlabeled_vote_loss: False
+vote_loss_size_factor: 1.0
+samecls_match: False
+
+**** EPOCH 000, STEP 0 ****
+Current epoch: 0, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:22:32.776253
+ ---- batch: 025 ----
+mean label_acc: 0.693192
+mean label_loss: 0.914093
+mean loss: 2.158879
+
+**** EPOCH 001, STEP 25 ****
+Current epoch: 1, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:22:41.240111
+ ---- batch: 025 ----
+mean label_acc: 0.738347
+mean label_loss: 0.700051
+mean loss: 1.822948
+
+**** EPOCH 002, STEP 50 ****
+Current epoch: 2, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:22:49.444242
+ ---- batch: 025 ----
+mean label_acc: 0.728809
+mean label_loss: 0.681761
+mean loss: 1.777760
+
+**** EPOCH 003, STEP 75 ****
+Current epoch: 3, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:22:57.631472
+ ---- batch: 025 ----
+mean label_acc: 0.759312
+mean label_loss: 0.658898
+mean loss: 1.747452
+
+**** EPOCH 004, STEP 100 ****
+Current epoch: 4, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:23:05.804902
+ ---- batch: 025 ----
+mean label_acc: 0.769237
+mean label_loss: 0.644796
+mean loss: 1.744118
+
+**** EPOCH 005, STEP 125 ****
+Current epoch: 5, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:23:13.795629
+ ---- batch: 025 ----
+mean label_acc: 0.774735
+mean label_loss: 0.636868
+mean loss: 1.717997
+eval mean test_label_acc: 0.776195
+
+**** EPOCH 006, STEP 150 ****
+Current epoch: 6, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:23:23.047926
+ ---- batch: 025 ----
+mean label_acc: 0.764189
+mean label_loss: 0.655341
+mean loss: 1.726263
+
+**** EPOCH 007, STEP 175 ****
+Current epoch: 7, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:23:31.413832
+ ---- batch: 025 ----
+mean label_acc: 0.778635
+mean label_loss: 0.647759
+mean loss: 1.719398
+
+**** EPOCH 008, STEP 200 ****
+Current epoch: 8, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:23:39.696660
+ ---- batch: 025 ----
+mean label_acc: 0.785276
+mean label_loss: 0.621267
+mean loss: 1.700651
+
+**** EPOCH 009, STEP 225 ****
+Current epoch: 9, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:23:48.049093
+ ---- batch: 025 ----
+mean label_acc: 0.781818
+mean label_loss: 0.608176
+mean loss: 1.694632
+
+**** EPOCH 010, STEP 250 ****
+Current epoch: 10, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:23:56.157290
+ ---- batch: 025 ----
+mean label_acc: 0.781249
+mean label_loss: 0.611140
+mean loss: 1.684572
+eval mean test_label_acc: 0.798050
+
+**** EPOCH 011, STEP 275 ****
+Current epoch: 11, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:24:05.294196
+ ---- batch: 025 ----
+mean label_acc: 0.756075
+mean label_loss: 0.635522
+mean loss: 1.728344
+
+**** EPOCH 012, STEP 300 ****
+Current epoch: 12, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:24:13.626917
+ ---- batch: 025 ----
+mean label_acc: 0.785722
+mean label_loss: 0.613840
+mean loss: 1.698309
+
+**** EPOCH 013, STEP 325 ****
+Current epoch: 13, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:24:21.879441
+ ---- batch: 025 ----
+mean label_acc: 0.778596
+mean label_loss: 0.615235
+mean loss: 1.685044
+
+**** EPOCH 014, STEP 350 ****
+Current epoch: 14, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:24:30.193719
+ ---- batch: 025 ----
+mean label_acc: 0.773240
+mean label_loss: 0.642991
+mean loss: 1.709938
+
+**** EPOCH 015, STEP 375 ****
+Current epoch: 15, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:24:38.396935
+ ---- batch: 025 ----
+mean label_acc: 0.777713
+mean label_loss: 0.621561
+mean loss: 1.687159
+eval mean test_label_acc: 0.799055
+
+**** EPOCH 016, STEP 400 ****
+Current epoch: 16, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:24:47.662462
+ ---- batch: 025 ----
+mean label_acc: 0.768453
+mean label_loss: 0.649625
+mean loss: 1.726797
+
+**** EPOCH 017, STEP 425 ****
+Current epoch: 17, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:24:55.939026
+ ---- batch: 025 ----
+mean label_acc: 0.772808
+mean label_loss: 0.640833
+mean loss: 1.712017
+
+**** EPOCH 018, STEP 450 ****
+Current epoch: 18, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:25:04.277074
+ ---- batch: 025 ----
+mean label_acc: 0.774039
+mean label_loss: 0.640306
+mean loss: 1.714051
+
+**** EPOCH 019, STEP 475 ****
+Current epoch: 19, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:25:12.753691
+ ---- batch: 025 ----
+mean label_acc: 0.768549
+mean label_loss: 0.668255
+mean loss: 1.737714
+
+**** EPOCH 020, STEP 500 ****
+Current epoch: 20, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:25:21.077347
+ ---- batch: 025 ----
+mean label_acc: 0.763048
+mean label_loss: 0.657875
+mean loss: 1.729301
+eval mean test_label_acc: 0.775415
+
+**** EPOCH 021, STEP 525 ****
+Current epoch: 21, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:25:30.255045
+ ---- batch: 025 ----
+mean label_acc: 0.770627
+mean label_loss: 0.647406
+mean loss: 1.712758
+
+**** EPOCH 022, STEP 550 ****
+Current epoch: 22, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:25:38.851175
+ ---- batch: 025 ----
+mean label_acc: 0.779346
+mean label_loss: 0.637850
+mean loss: 1.698128
+
+**** EPOCH 023, STEP 575 ****
+Current epoch: 23, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:25:47.281386
+ ---- batch: 025 ----
+mean label_acc: 0.753904
+mean label_loss: 0.664296
+mean loss: 1.752209
+
+**** EPOCH 024, STEP 600 ****
+Current epoch: 24, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:25:55.571173
+ ---- batch: 025 ----
+mean label_acc: 0.734496
+mean label_loss: 0.693439
+mean loss: 1.819657
+
+**** EPOCH 025, STEP 625 ****
+Current epoch: 25, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:26:03.871238
+ ---- batch: 025 ----
+mean label_acc: 0.722127
+mean label_loss: 0.704149
+mean loss: 1.829371
+eval mean test_label_acc: 0.774405
+
+**** EPOCH 026, STEP 650 ****
+Current epoch: 26, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:26:13.018069
+ ---- batch: 025 ----
+mean label_acc: 0.724008
+mean label_loss: 0.705522
+mean loss: 1.829343
+
+**** EPOCH 027, STEP 675 ****
+Current epoch: 27, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:26:21.149255
+ ---- batch: 025 ----
+mean label_acc: 0.719369
+mean label_loss: 0.716436
+mean loss: 1.837959
+
+**** EPOCH 028, STEP 700 ****
+Current epoch: 28, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:26:29.358663
+ ---- batch: 025 ----
+mean label_acc: 0.724386
+mean label_loss: 0.700284
+mean loss: 1.824148
+
+**** EPOCH 029, STEP 725 ****
+Current epoch: 29, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:26:37.679279
+ ---- batch: 025 ----
+mean label_acc: 0.721469
+mean label_loss: 0.707692
+mean loss: 1.831920
+
+**** EPOCH 030, STEP 750 ****
+Current epoch: 30, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:26:45.813143
+ ---- batch: 025 ----
+mean label_acc: 0.725571
+mean label_loss: 0.700231
+mean loss: 1.829819
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 031, STEP 775 ****
+Current epoch: 31, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:26:54.927940
+ ---- batch: 025 ----
+mean label_acc: 0.713291
+mean label_loss: 0.701452
+mean loss: 1.821784
+
+**** EPOCH 032, STEP 800 ****
+Current epoch: 32, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:27:03.089956
+ ---- batch: 025 ----
+mean label_acc: 0.718769
+mean label_loss: 0.708135
+mean loss: 1.819341
+
+**** EPOCH 033, STEP 825 ****
+Current epoch: 33, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:27:11.227605
+ ---- batch: 025 ----
+mean label_acc: 0.720061
+mean label_loss: 0.702545
+mean loss: 1.819617
+
+**** EPOCH 034, STEP 850 ****
+Current epoch: 34, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:27:19.353740
+ ---- batch: 025 ----
+mean label_acc: 0.719007
+mean label_loss: 0.700006
+mean loss: 1.818524
+
+**** EPOCH 035, STEP 875 ****
+Current epoch: 35, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:27:27.651142
+ ---- batch: 025 ----
+mean label_acc: 0.733828
+mean label_loss: 0.685111
+mean loss: 1.790499
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 036, STEP 900 ****
+Current epoch: 36, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:27:36.655163
+ ---- batch: 025 ----
+mean label_acc: 0.722984
+mean label_loss: 0.702541
+mean loss: 1.808561
+
+**** EPOCH 037, STEP 925 ****
+Current epoch: 37, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:27:44.749330
+ ---- batch: 025 ----
+mean label_acc: 0.730595
+mean label_loss: 0.694182
+mean loss: 1.796630
+
+**** EPOCH 038, STEP 950 ****
+Current epoch: 38, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:27:52.992995
+ ---- batch: 025 ----
+mean label_acc: 0.735056
+mean label_loss: 0.688767
+mean loss: 1.793323
+
+**** EPOCH 039, STEP 975 ****
+Current epoch: 39, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:28:01.124079
+ ---- batch: 025 ----
+mean label_acc: 0.727989
+mean label_loss: 0.691728
+mean loss: 1.792988
+
+**** EPOCH 040, STEP 1000 ****
+Current epoch: 40, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:28:09.375935
+ ---- batch: 025 ----
+mean label_acc: 0.734687
+mean label_loss: 0.671293
+mean loss: 1.774011
+eval mean test_label_acc: 0.753765
+
+**** EPOCH 041, STEP 1025 ****
+Current epoch: 41, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 04:28:19.032325
+ ---- batch: 025 ----
+mean label_acc: 0.734056
+mean label_loss: 0.685608
+mean loss: 1.777581
+
+**** EPOCH 042, STEP 1050 ****
+Current epoch: 42, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 04:28:27.169499
+ ---- batch: 025 ----
+mean label_acc: 0.744788
+mean label_loss: 0.669728
+mean loss: 1.766804
+
+**** EPOCH 043, STEP 1075 ****
+Current epoch: 43, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 04:28:35.288313
+ ---- batch: 025 ----
+mean label_acc: 0.757633
+mean label_loss: 0.652104
+mean loss: 1.749445
+
+**** EPOCH 044, STEP 1100 ****
+Current epoch: 44, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 04:28:43.502317
+ ---- batch: 025 ----
+mean label_acc: 0.764376
+mean label_loss: 0.644490
+mean loss: 1.725852
+
+**** EPOCH 045, STEP 1125 ****
+Current epoch: 45, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 04:28:51.599847
+ ---- batch: 025 ----
+mean label_acc: 0.750553
+mean label_loss: 0.665953
+mean loss: 1.767037
+eval mean test_label_acc: 0.785665
+
+**** EPOCH 046, STEP 1150 ****
+Current epoch: 46, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 04:29:00.828668
+ ---- batch: 025 ----
+mean label_acc: 0.756208
+mean label_loss: 0.655137
+mean loss: 1.741714
+
+**** EPOCH 047, STEP 1175 ****
+Current epoch: 47, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 04:29:08.976561
+ ---- batch: 025 ----
+mean label_acc: 0.756476
+mean label_loss: 0.653085
+mean loss: 1.750723
+
+**** EPOCH 048, STEP 1200 ****
+Current epoch: 48, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 04:29:17.211478
+ ---- batch: 025 ----
+mean label_acc: 0.750239
+mean label_loss: 0.656717
+mean loss: 1.751177
+
+**** EPOCH 049, STEP 1225 ****
+Current epoch: 49, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 04:29:25.327022
+ ---- batch: 025 ----
+mean label_acc: 0.756840
+mean label_loss: 0.657037
+mean loss: 1.744383
+
+**** EPOCH 050, STEP 1250 ****
+Current epoch: 50, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 04:29:33.371687
+ ---- batch: 025 ----
+mean label_acc: 0.762850
+mean label_loss: 0.643997
+mean loss: 1.736856
+eval mean test_label_acc: 0.792880
+
+**** EPOCH 051, STEP 1275 ****
+Current epoch: 51, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 04:29:42.475000
+ ---- batch: 025 ----
+mean label_acc: 0.768501
+mean label_loss: 0.640680
+mean loss: 1.767562
+
+**** EPOCH 052, STEP 1300 ****
+Current epoch: 52, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 04:29:50.533213
+ ---- batch: 025 ----
+mean label_acc: 0.750743
+mean label_loss: 0.651554
+mean loss: 1.778264
+
+**** EPOCH 053, STEP 1325 ****
+Current epoch: 53, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 04:29:58.654725
+ ---- batch: 025 ----
+mean label_acc: 0.747731
+mean label_loss: 0.660584
+mean loss: 1.788375
+
+**** EPOCH 054, STEP 1350 ****
+Current epoch: 54, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 04:30:06.723367
+ ---- batch: 025 ----
+mean label_acc: 0.747441
+mean label_loss: 0.668256
+mean loss: 1.809685
+
+**** EPOCH 055, STEP 1375 ****
+Current epoch: 55, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 04:30:14.912582
+ ---- batch: 025 ----
+mean label_acc: 0.757246
+mean label_loss: 0.656353
+mean loss: 1.774790
+eval mean test_label_acc: 0.798460
+
+**** EPOCH 056, STEP 1400 ****
+Current epoch: 56, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 04:30:24.028759
+ ---- batch: 025 ----
+mean label_acc: 0.760839
+mean label_loss: 0.650303
+mean loss: 1.772248
+
+**** EPOCH 057, STEP 1425 ****
+Current epoch: 57, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 04:30:32.284677
+ ---- batch: 025 ----
+mean label_acc: 0.753932
+mean label_loss: 0.661613
+mean loss: 1.780774
+
+**** EPOCH 058, STEP 1450 ****
+Current epoch: 58, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 04:30:40.552602
+ ---- batch: 025 ----
+mean label_acc: 0.761972
+mean label_loss: 0.647496
+mean loss: 1.756959
+
+**** EPOCH 059, STEP 1475 ****
+Current epoch: 59, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 04:30:48.793022
+ ---- batch: 025 ----
+mean label_acc: 0.777497
+mean label_loss: 0.627129
+mean loss: 1.754407
+
+**** EPOCH 060, STEP 1500 ****
+Current epoch: 60, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 04:30:57.047526
+ ---- batch: 025 ----
+mean label_acc: 0.772671
+mean label_loss: 0.639538
+mean loss: 1.748685
+eval mean test_label_acc: 0.785105
+
+**** EPOCH 061, STEP 1525 ****
+Current epoch: 61, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 04:31:06.613074
+ ---- batch: 025 ----
+mean label_acc: 0.751927
+mean label_loss: 0.655105
+mean loss: 1.762026
+
+**** EPOCH 062, STEP 1550 ****
+Current epoch: 62, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 04:31:14.714868
+ ---- batch: 025 ----
+mean label_acc: 0.756294
+mean label_loss: 0.653704
+mean loss: 1.774880
+
+**** EPOCH 063, STEP 1575 ****
+Current epoch: 63, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 04:31:22.904792
+ ---- batch: 025 ----
+mean label_acc: 0.762795
+mean label_loss: 0.634313
+mean loss: 1.749503
+
+**** EPOCH 064, STEP 1600 ****
+Current epoch: 64, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 04:31:30.984218
+ ---- batch: 025 ----
+mean label_acc: 0.763345
+mean label_loss: 0.634055
+mean loss: 1.726785
+
+**** EPOCH 065, STEP 1625 ****
+Current epoch: 65, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 04:31:39.319726
+ ---- batch: 025 ----
+mean label_acc: 0.745848
+mean label_loss: 0.662111
+mean loss: 1.759601
+eval mean test_label_acc: 0.800465
+
+**** EPOCH 066, STEP 1650 ****
+Current epoch: 66, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 04:31:48.452607
+ ---- batch: 025 ----
+mean label_acc: 0.763301
+mean label_loss: 0.635591
+mean loss: 1.735709
+
+**** EPOCH 067, STEP 1675 ****
+Current epoch: 67, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 04:31:56.567939
+ ---- batch: 025 ----
+mean label_acc: 0.762759
+mean label_loss: 0.635655
+mean loss: 1.735817
+
+**** EPOCH 068, STEP 1700 ****
+Current epoch: 68, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 04:32:04.660881
+ ---- batch: 025 ----
+mean label_acc: 0.772709
+mean label_loss: 0.618668
+mean loss: 1.716552
+
+**** EPOCH 069, STEP 1725 ****
+Current epoch: 69, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 04:32:12.741590
+ ---- batch: 025 ----
+mean label_acc: 0.774682
+mean label_loss: 0.621882
+mean loss: 1.722444
+
+**** EPOCH 070, STEP 1750 ****
+Current epoch: 70, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 04:32:21.258188
+ ---- batch: 025 ----
+mean label_acc: 0.768579
+mean label_loss: 0.621392
+mean loss: 1.705518
+eval mean test_label_acc: 0.776830
+
+**** EPOCH 071, STEP 1775 ****
+Current epoch: 71, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 04:32:30.766203
+ ---- batch: 025 ----
+mean label_acc: 0.769222
+mean label_loss: 0.619320
+mean loss: 1.711136
+
+**** EPOCH 072, STEP 1800 ****
+Current epoch: 72, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 04:32:39.058197
+ ---- batch: 025 ----
+mean label_acc: 0.766902
+mean label_loss: 0.635297
+mean loss: 1.724620
+
+**** EPOCH 073, STEP 1825 ****
+Current epoch: 73, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 04:32:47.305023
+ ---- batch: 025 ----
+mean label_acc: 0.770049
+mean label_loss: 0.619063
+mean loss: 1.712666
+
+**** EPOCH 074, STEP 1850 ****
+Current epoch: 74, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 04:32:55.518942
+ ---- batch: 025 ----
+mean label_acc: 0.766128
+mean label_loss: 0.630146
+mean loss: 1.724878
+
+**** EPOCH 075, STEP 1875 ****
+Current epoch: 75, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 04:33:03.755847
+ ---- batch: 025 ----
+mean label_acc: 0.768487
+mean label_loss: 0.623368
+mean loss: 1.714729
+eval mean test_label_acc: 0.790310
+
+**** EPOCH 076, STEP 1900 ****
+Current epoch: 76, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 04:33:13.322502
+ ---- batch: 025 ----
+mean label_acc: 0.758152
+mean label_loss: 0.659913
+mean loss: 1.746199
+
+**** EPOCH 077, STEP 1925 ****
+Current epoch: 77, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 04:33:21.931923
+Namespace(batch_size='2,3', bn_decay_rate=0.5, bn_decay_step=20, cls_number=10, conf_thresh=0.05, dataset='sunrgbd', detector_checkpoint='none', ema_decay=0.999, eval=False, eval_interval=5, learning_rate=0.01, log_dir='./temp', lr_decay_rates='0.3, 0.3, 0.1, 0.1', lr_decay_steps='400, 600, 800, 900', max_epoch=1001, model='Pointnet2SSG', num_point=20000, print_interval=25, resume=False, save_interval=200, unlabeled_loss_weight=2.0, weight_decay=0)
+unlabeled_batch_size: 3
+dataset: sunrgbd
+remove_empty_box: False
+use_3d_nms: True
+nms_iou: 0.25
+use_old_type_nms: False
+cls_nms: True
+per_class_proposal: True
+conf_thresh: 0.05
+obj_threshold: 0.9
+cls_threshold: 0.9
+use_lhs: True
+iou_threshold: 0.25
+use_unlabeled_obj_loss: False
+use_unlabeled_vote_loss: False
+vote_loss_size_factor: 1.0
+samecls_match: False
+
+**** EPOCH 000, STEP 0 ****
+Current epoch: 0, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:36:25.589265
+ ---- batch: 025 ----
+mean label_acc: 0.659930
+mean label_loss: 1.027421
+mean loss: 2.249819
+
+**** EPOCH 001, STEP 25 ****
+Current epoch: 1, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:36:34.775690
+ ---- batch: 025 ----
+mean label_acc: 0.723180
+mean label_loss: 0.704022
+mean loss: 1.794410
+
+**** EPOCH 002, STEP 50 ****
+Current epoch: 2, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:36:43.003686
+ ---- batch: 025 ----
+mean label_acc: 0.716099
+mean label_loss: 0.717913
+mean loss: 1.832225
+
+**** EPOCH 003, STEP 75 ****
+Current epoch: 3, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:36:51.381808
+ ---- batch: 025 ----
+mean label_acc: 0.706625
+mean label_loss: 0.742072
+mean loss: 1.883993
+
+**** EPOCH 004, STEP 100 ****
+Current epoch: 4, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:36:59.757044
+ ---- batch: 025 ----
+mean label_acc: 0.737702
+mean label_loss: 0.682518
+mean loss: 1.820000
+
+**** EPOCH 005, STEP 125 ****
+Current epoch: 5, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:37:08.360079
+ ---- batch: 025 ----
+mean label_acc: 0.722953
+mean label_loss: 0.705507
+mean loss: 1.815567
+eval mean test_label_acc: 0.594045
+
+**** EPOCH 006, STEP 150 ****
+Current epoch: 6, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:37:17.835461
+ ---- batch: 025 ----
+mean label_acc: 0.733061
+mean label_loss: 0.704708
+mean loss: 1.815958
+
+**** EPOCH 007, STEP 175 ****
+Current epoch: 7, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:37:26.182969
+ ---- batch: 025 ----
+mean label_acc: 0.730283
+mean label_loss: 0.698844
+mean loss: 1.803429
+
+**** EPOCH 008, STEP 200 ****
+Current epoch: 8, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:37:34.443266
+ ---- batch: 025 ----
+mean label_acc: 0.722707
+mean label_loss: 0.704266
+mean loss: 1.793319
+
+**** EPOCH 009, STEP 225 ****
+Current epoch: 9, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:37:42.730572
+ ---- batch: 025 ----
+mean label_acc: 0.723514
+mean label_loss: 0.713479
+mean loss: 1.806498
+
+**** EPOCH 010, STEP 250 ****
+Current epoch: 10, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:37:50.982050
+ ---- batch: 025 ----
+mean label_acc: 0.736605
+mean label_loss: 0.707121
+mean loss: 1.815463
+eval mean test_label_acc: 0.474530
+
+**** EPOCH 011, STEP 275 ****
+Current epoch: 11, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:38:00.235680
+ ---- batch: 025 ----
+mean label_acc: 0.723033
+mean label_loss: 0.716713
+mean loss: 1.830605
+
+**** EPOCH 012, STEP 300 ****
+Current epoch: 12, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:38:08.493400
+ ---- batch: 025 ----
+mean label_acc: 0.719748
+mean label_loss: 0.736932
+mean loss: 1.826274
+
+**** EPOCH 013, STEP 325 ****
+Current epoch: 13, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:38:16.706991
+ ---- batch: 025 ----
+mean label_acc: 0.720276
+mean label_loss: 0.716674
+mean loss: 1.833394
+
+**** EPOCH 014, STEP 350 ****
+Current epoch: 14, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:38:25.111553
+ ---- batch: 025 ----
+mean label_acc: 0.723435
+mean label_loss: 0.702437
+mean loss: 1.771309
+
+**** EPOCH 015, STEP 375 ****
+Current epoch: 15, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:38:33.408579
+ ---- batch: 025 ----
+mean label_acc: 0.720647
+mean label_loss: 0.700186
+mean loss: 1.780323
+eval mean test_label_acc: 0.759195
+
+**** EPOCH 016, STEP 400 ****
+Current epoch: 16, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:38:42.768410
+ ---- batch: 025 ----
+mean label_acc: 0.723250
+mean label_loss: 0.703317
+mean loss: 1.781806
+
+**** EPOCH 017, STEP 425 ****
+Current epoch: 17, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:38:51.019545
+ ---- batch: 025 ----
+mean label_acc: 0.727314
+mean label_loss: 0.701459
+mean loss: 1.780538
+
+**** EPOCH 018, STEP 450 ****
+Current epoch: 18, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:38:59.381372
+ ---- batch: 025 ----
+mean label_acc: 0.725819
+mean label_loss: 0.698631
+mean loss: 1.793376
+
+**** EPOCH 019, STEP 475 ****
+Current epoch: 19, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:39:08.150989
+Namespace(batch_size='2,3', bn_decay_rate=0.5, bn_decay_step=20, cls_number=10, conf_thresh=0.05, dataset='sunrgbd', detector_checkpoint='none', ema_decay=0.999, eval=False, eval_interval=5, learning_rate=0.01, log_dir='./temp', lr_decay_rates='0.3, 0.3, 0.1, 0.1', lr_decay_steps='400, 600, 800, 900', max_epoch=1001, model='Pointnet2SSG', num_point=20000, print_interval=25, resume=False, save_interval=200, unlabeled_loss_weight=2.0, weight_decay=0)
+unlabeled_batch_size: 3
+dataset: sunrgbd
+remove_empty_box: False
+use_3d_nms: True
+nms_iou: 0.25
+use_old_type_nms: False
+cls_nms: True
+per_class_proposal: True
+conf_thresh: 0.05
+obj_threshold: 0.9
+cls_threshold: 0.9
+use_lhs: True
+iou_threshold: 0.25
+use_unlabeled_obj_loss: False
+use_unlabeled_vote_loss: False
+vote_loss_size_factor: 1.0
+samecls_match: False
+
+**** EPOCH 000, STEP 0 ****
+Current epoch: 0, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:39:50.393785
+Namespace(batch_size='2,3', bn_decay_rate=0.5, bn_decay_step=20, cls_number=10, conf_thresh=0.05, dataset='sunrgbd', detector_checkpoint='none', ema_decay=0.999, eval=False, eval_interval=5, learning_rate=0.01, log_dir='./temp', lr_decay_rates='0.3, 0.3, 0.1, 0.1', lr_decay_steps='400, 600, 800, 900', max_epoch=1001, model='Pointnet2SSG', num_point=20000, print_interval=25, resume=False, save_interval=200, unlabeled_loss_weight=2.0, weight_decay=0)
+unlabeled_batch_size: 3
+dataset: sunrgbd
+remove_empty_box: False
+use_3d_nms: True
+nms_iou: 0.25
+use_old_type_nms: False
+cls_nms: True
+per_class_proposal: True
+conf_thresh: 0.05
+obj_threshold: 0.9
+cls_threshold: 0.9
+use_lhs: True
+iou_threshold: 0.25
+use_unlabeled_obj_loss: False
+use_unlabeled_vote_loss: False
+vote_loss_size_factor: 1.0
+samecls_match: False
+
+**** EPOCH 000, STEP 0 ****
+Current epoch: 0, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:44:27.383539
+ ---- batch: 025 ----
+mean label_acc: 0.652165
+mean label_loss: 0.974636
+mean loss: 2.234172
+
+**** EPOCH 001, STEP 25 ****
+Current epoch: 1, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:44:36.035118
+ ---- batch: 025 ----
+mean label_acc: 0.701746
+mean label_loss: 0.753992
+mean loss: 1.865011
+
+**** EPOCH 002, STEP 50 ****
+Current epoch: 2, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:44:44.211040
+ ---- batch: 025 ----
+mean label_acc: 0.719982
+mean label_loss: 0.709309
+mean loss: 1.795227
+
+**** EPOCH 003, STEP 75 ****
+Current epoch: 3, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:44:52.526906
+ ---- batch: 025 ----
+mean label_acc: 0.720951
+mean label_loss: 0.722904
+mean loss: 1.822666
+
+**** EPOCH 004, STEP 100 ****
+Current epoch: 4, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:45:00.979324
+ ---- batch: 025 ----
+mean label_acc: 0.721121
+mean label_loss: 0.734304
+mean loss: 1.783018
+
+**** EPOCH 005, STEP 125 ****
+Current epoch: 5, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:45:09.837327
+ ---- batch: 025 ----
+mean label_acc: 0.720630
+mean label_loss: 0.732747
+mean loss: 1.770970
+eval mean test_label_acc: 0.770770
+
+**** EPOCH 006, STEP 150 ****
+Current epoch: 6, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:45:19.353435
+ ---- batch: 025 ----
+mean label_acc: 0.719134
+mean label_loss: 0.725374
+mean loss: 1.766969
+
+**** EPOCH 007, STEP 175 ****
+Current epoch: 7, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:45:27.851322
+ ---- batch: 025 ----
+mean label_acc: 0.720975
+mean label_loss: 0.726470
+mean loss: 1.754103
+
+**** EPOCH 008, STEP 200 ****
+Current epoch: 8, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:45:36.260324
+ ---- batch: 025 ----
+mean label_acc: 0.711501
+mean label_loss: 0.734365
+mean loss: 1.791411
+
+**** EPOCH 009, STEP 225 ****
+Current epoch: 9, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:45:44.690133
+ ---- batch: 025 ----
+mean label_acc: 0.720937
+mean label_loss: 0.733087
+mean loss: 1.759758
+
+**** EPOCH 010, STEP 250 ****
+Current epoch: 10, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:45:53.374833
+ ---- batch: 025 ----
+mean label_acc: 0.719702
+mean label_loss: 0.724376
+mean loss: 1.753384
+eval mean test_label_acc: 0.768460
+
+**** EPOCH 011, STEP 275 ****
+Current epoch: 11, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:46:02.780288
+ ---- batch: 025 ----
+mean label_acc: 0.720774
+mean label_loss: 0.728624
+mean loss: 1.762662
+
+**** EPOCH 012, STEP 300 ****
+Current epoch: 12, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:46:11.423881
+ ---- batch: 025 ----
+mean label_acc: 0.718895
+mean label_loss: 0.750988
+mean loss: 1.779620
+
+**** EPOCH 013, STEP 325 ****
+Current epoch: 13, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:46:20.276236
+ ---- batch: 025 ----
+mean label_acc: 0.721735
+mean label_loss: 0.718099
+mean loss: 1.744767
+
+**** EPOCH 014, STEP 350 ****
+Current epoch: 14, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:46:29.014760
+ ---- batch: 025 ----
+mean label_acc: 0.721660
+mean label_loss: 0.713943
+mean loss: 1.740701
+
+**** EPOCH 015, STEP 375 ****
+Current epoch: 15, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:46:37.410921
+ ---- batch: 025 ----
+mean label_acc: 0.720984
+mean label_loss: 0.721084
+mean loss: 1.747750
+eval mean test_label_acc: 0.770430
+
+**** EPOCH 016, STEP 400 ****
+Current epoch: 16, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:46:46.776774
+ ---- batch: 025 ----
+mean label_acc: 0.719996
+mean label_loss: 0.717024
+mean loss: 1.750144
+
+**** EPOCH 017, STEP 425 ****
+Current epoch: 17, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:46:55.634564
+ ---- batch: 025 ----
+mean label_acc: 0.720867
+mean label_loss: 0.726091
+mean loss: 1.752844
+
+**** EPOCH 018, STEP 450 ****
+Current epoch: 18, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:47:04.253148
+ ---- batch: 025 ----
+mean label_acc: 0.720632
+mean label_loss: 0.713550
+mean loss: 1.740217
+
+**** EPOCH 019, STEP 475 ****
+Current epoch: 19, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:47:13.003451
+ ---- batch: 025 ----
+mean label_acc: 0.720709
+mean label_loss: 0.710572
+mean loss: 1.759870
+
+**** EPOCH 020, STEP 500 ****
+Current epoch: 20, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:47:21.395074
+ ---- batch: 025 ----
+mean label_acc: 0.721226
+mean label_loss: 0.714505
+mean loss: 1.749364
+eval mean test_label_acc: 0.769185
+
+**** EPOCH 021, STEP 525 ****
+Current epoch: 21, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:47:30.695536
+ ---- batch: 025 ----
+mean label_acc: 0.720644
+mean label_loss: 0.720186
+mean loss: 1.746853
+
+**** EPOCH 022, STEP 550 ****
+Current epoch: 22, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:47:39.102499
+ ---- batch: 025 ----
+mean label_acc: 0.720792
+mean label_loss: 0.722718
+mean loss: 1.749385
+
+**** EPOCH 023, STEP 575 ****
+Current epoch: 23, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:47:47.512139
+Namespace(batch_size='2,3', bn_decay_rate=0.5, bn_decay_step=20, cls_number=10, conf_thresh=0.05, dataset='sunrgbd', detector_checkpoint='none', ema_decay=0.999, eval=False, eval_interval=5, learning_rate=0.01, log_dir='./temp', lr_decay_rates='0.3, 0.3, 0.1, 0.1', lr_decay_steps='400, 600, 800, 900', max_epoch=1001, model='Pointnet2SSG', num_point=20000, print_interval=25, resume=False, save_interval=200, unlabeled_loss_weight=2.0, weight_decay=0)
+unlabeled_batch_size: 3
+dataset: sunrgbd
+remove_empty_box: False
+use_3d_nms: True
+nms_iou: 0.25
+use_old_type_nms: False
+cls_nms: True
+per_class_proposal: True
+conf_thresh: 0.05
+obj_threshold: 0.9
+cls_threshold: 0.9
+use_lhs: True
+iou_threshold: 0.25
+use_unlabeled_obj_loss: False
+use_unlabeled_vote_loss: False
+vote_loss_size_factor: 1.0
+samecls_match: False
+
+**** EPOCH 000, STEP 0 ****
+Current epoch: 0, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:50:18.758243
+ ---- batch: 025 ----
+mean label_acc: 0.647385
+mean label_loss: 1.037334
+mean loss: 2.261270
+
+**** EPOCH 001, STEP 25 ****
+Current epoch: 1, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:50:27.285749
+ ---- batch: 025 ----
+mean label_acc: 0.712541
+mean label_loss: 0.740222
+mean loss: 1.849690
+
+**** EPOCH 002, STEP 50 ****
+Current epoch: 2, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:50:35.388040
+ ---- batch: 025 ----
+mean label_acc: 0.723579
+mean label_loss: 0.742176
+mean loss: 1.845359
+
+**** EPOCH 003, STEP 75 ****
+Current epoch: 3, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:50:43.737541
+ ---- batch: 025 ----
+mean label_acc: 0.715505
+mean label_loss: 0.729615
+mean loss: 1.834871
+
+**** EPOCH 004, STEP 100 ****
+Current epoch: 4, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:50:51.969683
+ ---- batch: 025 ----
+mean label_acc: 0.716453
+mean label_loss: 0.728006
+mean loss: 1.828358
+
+**** EPOCH 005, STEP 125 ****
+Current epoch: 5, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:51:00.342354
+ ---- batch: 025 ----
+mean label_acc: 0.715515
+mean label_loss: 0.712292
+mean loss: 1.783730
+eval mean test_label_acc: 0.769235
+
+**** EPOCH 006, STEP 150 ****
+Current epoch: 6, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:51:10.122963
+ ---- batch: 025 ----
+mean label_acc: 0.721315
+mean label_loss: 0.723988
+mean loss: 1.777922
+
+**** EPOCH 007, STEP 175 ****
+Current epoch: 7, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:51:18.637693
+ ---- batch: 025 ----
+mean label_acc: 0.715544
+mean label_loss: 0.723853
+mean loss: 1.813969
+
+**** EPOCH 008, STEP 200 ****
+Current epoch: 8, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:51:27.034095
+ ---- batch: 025 ----
+mean label_acc: 0.719738
+mean label_loss: 0.711004
+mean loss: 1.753809
+
+**** EPOCH 009, STEP 225 ****
+Current epoch: 9, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:51:35.723665
+ ---- batch: 025 ----
+mean label_acc: 0.721794
+mean label_loss: 0.709989
+mean loss: 1.769155
+
+**** EPOCH 010, STEP 250 ****
+Current epoch: 10, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:51:44.512540
+Namespace(batch_size='2,3', bn_decay_rate=0.5, bn_decay_step=20, cls_number=10, conf_thresh=0.05, dataset='sunrgbd', detector_checkpoint='none', ema_decay=0.999, eval=False, eval_interval=2, learning_rate=0.002, log_dir='./temp', lr_decay_rates='0.3, 0.3, 0.1, 0.1', lr_decay_steps='400, 600, 800, 900', max_epoch=1001, model='Pointnet2SSG', num_point=20000, print_interval=10, resume=False, save_interval=200, unlabeled_loss_weight=2.0, use_vector=False, weight_decay=0)
+unlabeled_batch_size: 3
+dataset: sunrgbd
+remove_empty_box: False
+use_3d_nms: True
+nms_iou: 0.25
+use_old_type_nms: False
+cls_nms: True
+per_class_proposal: True
+conf_thresh: 0.05
+obj_threshold: 0.9
+cls_threshold: 0.9
+use_lhs: True
+iou_threshold: 0.25
+use_unlabeled_obj_loss: False
+use_unlabeled_vote_loss: False
+vote_loss_size_factor: 1.0
+samecls_match: False
+
+**** EPOCH 000, STEP 0 ****
+Current epoch: 0, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.500000
+2021-08-30 04:53:48.790099
+ ---- batch: 010 ----
+mean label_acc: 0.520255
+mean label_loss: 1.522684
+mean loss: 1.522684
+ ---- batch: 020 ----
+mean label_acc: 0.711397
+mean label_loss: 0.902882
+mean loss: 0.902882
+
+**** EPOCH 001, STEP 25 ****
+Current epoch: 1, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.500000
+2021-08-30 04:53:53.203653
+ ---- batch: 010 ----
+mean label_acc: 0.710637
+mean label_loss: 0.749891
+mean loss: 0.749891
+ ---- batch: 020 ----
+mean label_acc: 0.723770
+mean label_loss: 0.732430
+mean loss: 0.732430
+
+**** EPOCH 002, STEP 50 ****
+Current epoch: 2, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.500000
+2021-08-30 04:53:57.050485
+ ---- batch: 010 ----
+mean label_acc: 0.773195
+mean label_loss: 0.638059
+mean loss: 0.638059
+ ---- batch: 020 ----
+mean label_acc: 0.655447
+mean label_loss: 0.817442
+mean loss: 0.817442
+eval mean test_label_acc: 0.185225
+
+**** EPOCH 003, STEP 75 ****
+Current epoch: 3, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.500000
+2021-08-30 04:54:01.808391
+ ---- batch: 010 ----
+mean label_acc: 0.751560
+mean label_loss: 0.677703
+mean loss: 0.677703
+ ---- batch: 020 ----
+mean label_acc: 0.691957
+mean label_loss: 0.759571
+mean loss: 0.759571
+
+**** EPOCH 004, STEP 100 ****
+Current epoch: 4, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.500000
+2021-08-30 04:54:05.778875
+ ---- batch: 010 ----
+mean label_acc: 0.704957
+mean label_loss: 0.735276
+mean loss: 0.735276
+ ---- batch: 020 ----
+mean label_acc: 0.759247
+mean label_loss: 0.628724
+mean loss: 0.628724
+eval mean test_label_acc: 0.666695
+
+**** EPOCH 005, STEP 125 ****
+Current epoch: 5, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.500000
+2021-08-30 04:54:10.557961
+ ---- batch: 010 ----
+mean label_acc: 0.732122
+mean label_loss: 0.682141
+mean loss: 0.682141
+ ---- batch: 020 ----
+mean label_acc: 0.699157
+mean label_loss: 0.722726
+mean loss: 0.722726
+
+**** EPOCH 006, STEP 150 ****
+Current epoch: 6, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.500000
+2021-08-30 04:54:14.372230
+ ---- batch: 010 ----
+mean label_acc: 0.694017
+mean label_loss: 0.734056
+mean loss: 0.734056
+ ---- batch: 020 ----
+mean label_acc: 0.730177
+mean label_loss: 0.693354
+mean loss: 0.693354
+eval mean test_label_acc: 0.584065
+
+**** EPOCH 007, STEP 175 ****
+Current epoch: 7, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.500000
+2021-08-30 04:54:19.210251
+ ---- batch: 010 ----
+mean label_acc: 0.711705
+mean label_loss: 0.710847
+mean loss: 0.710847
+ ---- batch: 020 ----
+mean label_acc: 0.719405
+mean label_loss: 0.716504
+mean loss: 0.716504
+
+**** EPOCH 008, STEP 200 ****
+Current epoch: 8, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.500000
+2021-08-30 04:54:23.054997
+ ---- batch: 010 ----
+mean label_acc: 0.702210
+mean label_loss: 0.724584
+mean loss: 0.724584
+ ---- batch: 020 ----
+mean label_acc: 0.720477
+mean label_loss: 0.723244
+mean loss: 0.723244
+eval mean test_label_acc: 0.764160
+
+**** EPOCH 009, STEP 225 ****
+Current epoch: 9, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.500000
+2021-08-30 04:54:27.900003
+ ---- batch: 010 ----
+mean label_acc: 0.712072
+mean label_loss: 0.740109
+mean loss: 0.740109
+ ---- batch: 020 ----
+mean label_acc: 0.723595
+mean label_loss: 0.703728
+mean loss: 0.703728
+
+**** EPOCH 010, STEP 250 ****
+Current epoch: 10, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.500000
+2021-08-30 04:54:31.715940
+ ---- batch: 010 ----
+mean label_acc: 0.722227
+mean label_loss: 0.710547
+mean loss: 0.710547
+ ---- batch: 020 ----
+mean label_acc: 0.704497
+mean label_loss: 0.724371
+mean loss: 0.724371
+eval mean test_label_acc: 0.643795
+
+**** EPOCH 011, STEP 275 ****
+Current epoch: 11, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.500000
+2021-08-30 04:54:36.937684
+ ---- batch: 010 ----
+mean label_acc: 0.735917
+mean label_loss: 0.681920
+mean loss: 0.681920
+ ---- batch: 020 ----
+mean label_acc: 0.690380
+mean label_loss: 0.742554
+mean loss: 0.742554
+
+**** EPOCH 012, STEP 300 ****
+Current epoch: 12, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.500000
+2021-08-30 04:54:40.872417
+ ---- batch: 010 ----
+mean label_acc: 0.693097
+mean label_loss: 0.740209
+mean loss: 0.740209
+ ---- batch: 020 ----
+mean label_acc: 0.725967
+mean label_loss: 0.708257
+mean loss: 0.708257
+eval mean test_label_acc: 0.767175
+
+**** EPOCH 013, STEP 325 ****
+Current epoch: 13, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.500000
+2021-08-30 04:54:45.893199
+ ---- batch: 010 ----
+mean label_acc: 0.710285
+mean label_loss: 0.719192
+mean loss: 0.719192
+ ---- batch: 020 ----
+mean label_acc: 0.725725
+mean label_loss: 0.697027
+mean loss: 0.697027
+
+**** EPOCH 014, STEP 350 ****
+Current epoch: 14, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.500000
+2021-08-30 04:54:49.927874
+ ---- batch: 010 ----
+mean label_acc: 0.761150
+mean label_loss: 0.662911
+mean loss: 0.662911
+ ---- batch: 020 ----
+mean label_acc: 0.657620
+mean label_loss: 0.800304
+mean loss: 0.800304
+eval mean test_label_acc: 0.767800
+
+**** EPOCH 015, STEP 375 ****
+Current epoch: 15, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.500000
+2021-08-30 04:54:54.946400
+ ---- batch: 010 ----
+mean label_acc: 0.693435
+mean label_loss: 0.770368
+mean loss: 0.770368
+ ---- batch: 020 ----
+mean label_acc: 0.759475
+mean label_loss: 0.675617
+mean loss: 0.675617
+
+**** EPOCH 016, STEP 400 ****
+Current epoch: 16, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.500000
+2021-08-30 04:54:58.844484
+ ---- batch: 010 ----
+mean label_acc: 0.724610
+mean label_loss: 0.694947
+mean loss: 0.694947
+ ---- batch: 020 ----
+mean label_acc: 0.719215
+mean label_loss: 0.701709
+mean loss: 0.701709
+eval mean test_label_acc: 0.689705
+
+**** EPOCH 017, STEP 425 ****
+Current epoch: 17, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.500000
+2021-08-30 04:55:03.885007
+ ---- batch: 010 ----
+mean label_acc: 0.742272
+mean label_loss: 0.650918
+mean loss: 0.650918
+ ---- batch: 020 ----
+mean label_acc: 0.744855
+mean label_loss: 0.681928
+mean loss: 0.681928
+
+**** EPOCH 018, STEP 450 ****
+Current epoch: 18, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.500000
+2021-08-30 04:55:08.065384
+ ---- batch: 010 ----
+mean label_acc: 0.711710
+mean label_loss: 0.739823
+mean loss: 0.739823
+ ---- batch: 020 ----
+mean label_acc: 0.714470
+mean label_loss: 0.699472
+mean loss: 0.699472
+eval mean test_label_acc: 0.776880
+
+**** EPOCH 019, STEP 475 ****
+Current epoch: 19, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.500000
+2021-08-30 04:55:13.158309
+ ---- batch: 010 ----
+mean label_acc: 0.740942
+mean label_loss: 0.685076
+mean loss: 0.685076
+ ---- batch: 020 ----
+mean label_acc: 0.682902
+mean label_loss: 0.752193
+mean loss: 0.752193
+
+**** EPOCH 020, STEP 500 ****
+Current epoch: 20, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.500000
+2021-08-30 04:55:17.382578
+ ---- batch: 010 ----
+mean label_acc: 0.701290
+mean label_loss: 0.728338
+mean loss: 0.728338
+ ---- batch: 020 ----
+mean label_acc: 0.725350
+mean label_loss: 0.683113
+mean loss: 0.683113
+eval mean test_label_acc: 0.770065
+
+**** EPOCH 021, STEP 525 ****
+Current epoch: 21, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.250000
+2021-08-30 04:55:22.431783
+ ---- batch: 010 ----
+mean label_acc: 0.744335
+mean label_loss: 0.687140
+mean loss: 0.687140
+ ---- batch: 020 ----
+mean label_acc: 0.730077
+mean label_loss: 0.689415
+mean loss: 0.689415
+
+**** EPOCH 022, STEP 550 ****
+Current epoch: 22, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.250000
+2021-08-30 04:55:26.555763
+ ---- batch: 010 ----
+mean label_acc: 0.700480
+mean label_loss: 0.713261
+mean loss: 0.713261
+ ---- batch: 020 ----
+mean label_acc: 0.753820
+mean label_loss: 0.632442
+mean loss: 0.632442
+eval mean test_label_acc: 0.771320
+
+**** EPOCH 023, STEP 575 ****
+Current epoch: 23, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.250000
+2021-08-30 04:55:31.540471
+ ---- batch: 010 ----
+mean label_acc: 0.727627
+mean label_loss: 0.688637
+mean loss: 0.688637
+ ---- batch: 020 ----
+mean label_acc: 0.681787
+mean label_loss: 0.739320
+mean loss: 0.739320
+
+**** EPOCH 024, STEP 600 ****
+Current epoch: 24, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.250000
+2021-08-30 04:55:35.442613
+ ---- batch: 010 ----
+mean label_acc: 0.688897
+mean label_loss: 0.751845
+mean loss: 0.751845
+ ---- batch: 020 ----
+mean label_acc: 0.776725
+mean label_loss: 0.630266
+mean loss: 0.630266
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 025, STEP 625 ****
+Current epoch: 25, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.250000
+2021-08-30 04:55:40.396487
+ ---- batch: 010 ----
+mean label_acc: 0.747127
+mean label_loss: 0.653463
+mean loss: 0.653463
+ ---- batch: 020 ----
+mean label_acc: 0.685867
+mean label_loss: 0.726984
+mean loss: 0.726984
+
+**** EPOCH 026, STEP 650 ****
+Current epoch: 26, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.250000
+2021-08-30 04:55:44.423446
+ ---- batch: 010 ----
+mean label_acc: 0.723182
+mean label_loss: 0.658823
+mean loss: 0.658823
+ ---- batch: 020 ----
+mean label_acc: 0.693855
+mean label_loss: 0.730951
+mean loss: 0.730951
+eval mean test_label_acc: 0.769085
+
+**** EPOCH 027, STEP 675 ****
+Current epoch: 27, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.250000
+2021-08-30 04:55:49.380248
+ ---- batch: 010 ----
+mean label_acc: 0.721395
+mean label_loss: 0.684164
+mean loss: 0.684164
+ ---- batch: 020 ----
+mean label_acc: 0.744062
+mean label_loss: 0.655901
+mean loss: 0.655901
+
+**** EPOCH 028, STEP 700 ****
+Current epoch: 28, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.250000
+2021-08-30 04:55:53.416717
+ ---- batch: 010 ----
+mean label_acc: 0.726677
+mean label_loss: 0.694070
+mean loss: 0.694070
+ ---- batch: 020 ----
+mean label_acc: 0.720747
+mean label_loss: 0.705608
+mean loss: 0.705608
+eval mean test_label_acc: 0.743445
+
+**** EPOCH 029, STEP 725 ****
+Current epoch: 29, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.250000
+2021-08-30 04:55:58.350528
+ ---- batch: 010 ----
+mean label_acc: 0.730842
+mean label_loss: 0.688486
+mean loss: 0.688486
+ ---- batch: 020 ----
+mean label_acc: 0.733342
+mean label_loss: 0.687144
+mean loss: 0.687144
+
+**** EPOCH 030, STEP 750 ****
+Current epoch: 30, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.250000
+2021-08-30 04:56:02.371700
+ ---- batch: 010 ----
+mean label_acc: 0.745177
+mean label_loss: 0.666039
+mean loss: 0.666039
+ ---- batch: 020 ----
+mean label_acc: 0.713287
+mean label_loss: 0.697621
+mean loss: 0.697621
+eval mean test_label_acc: 0.650155
+
+**** EPOCH 031, STEP 775 ****
+Current epoch: 31, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.250000
+2021-08-30 04:56:07.304952
+ ---- batch: 010 ----
+mean label_acc: 0.759015
+mean label_loss: 0.629297
+mean loss: 0.629297
+ ---- batch: 020 ----
+mean label_acc: 0.692360
+mean label_loss: 0.761820
+mean loss: 0.761820
+
+**** EPOCH 032, STEP 800 ****
+Current epoch: 32, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.250000
+2021-08-30 04:56:11.358403
+ ---- batch: 010 ----
+mean label_acc: 0.727892
+mean label_loss: 0.699057
+mean loss: 0.699057
+ ---- batch: 020 ----
+mean label_acc: 0.710815
+mean label_loss: 0.709073
+mean loss: 0.709073
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 033, STEP 825 ****
+Current epoch: 33, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.250000
+2021-08-30 04:56:16.382644
+ ---- batch: 010 ----
+mean label_acc: 0.690492
+mean label_loss: 0.720810
+mean loss: 0.720810
+ ---- batch: 020 ----
+mean label_acc: 0.720415
+mean label_loss: 0.711346
+mean loss: 0.711346
+
+**** EPOCH 034, STEP 850 ****
+Current epoch: 34, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.250000
+2021-08-30 04:56:20.416650
+ ---- batch: 010 ----
+mean label_acc: 0.722437
+mean label_loss: 0.681321
+mean loss: 0.681321
+ ---- batch: 020 ----
+mean label_acc: 0.746482
+mean label_loss: 0.674181
+mean loss: 0.674181
+eval mean test_label_acc: 0.758785
+
+**** EPOCH 035, STEP 875 ****
+Current epoch: 35, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.250000
+2021-08-30 04:56:25.350910
+ ---- batch: 010 ----
+mean label_acc: 0.723597
+mean label_loss: 0.693422
+mean loss: 0.693422
+ ---- batch: 020 ----
+mean label_acc: 0.719782
+mean label_loss: 0.685918
+mean loss: 0.685918
+
+**** EPOCH 036, STEP 900 ****
+Current epoch: 36, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.250000
+2021-08-30 04:56:29.284217
+ ---- batch: 010 ----
+mean label_acc: 0.728985
+mean label_loss: 0.692985
+mean loss: 0.692985
+ ---- batch: 020 ----
+mean label_acc: 0.738182
+mean label_loss: 0.678435
+mean loss: 0.678435
+eval mean test_label_acc: 0.765090
+
+**** EPOCH 037, STEP 925 ****
+Current epoch: 37, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.250000
+2021-08-30 04:56:34.218023
+ ---- batch: 010 ----
+mean label_acc: 0.761317
+mean label_loss: 0.631991
+mean loss: 0.631991
+ ---- batch: 020 ----
+mean label_acc: 0.683342
+mean label_loss: 0.772530
+mean loss: 0.772530
+
+**** EPOCH 038, STEP 950 ****
+Current epoch: 38, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.250000
+2021-08-30 04:56:38.280990
+ ---- batch: 010 ----
+mean label_acc: 0.744780
+mean label_loss: 0.686527
+mean loss: 0.686527
+ ---- batch: 020 ----
+mean label_acc: 0.727560
+mean label_loss: 0.679781
+mean loss: 0.679781
+eval mean test_label_acc: 0.765790
+
+**** EPOCH 039, STEP 975 ****
+Current epoch: 39, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.250000
+2021-08-30 04:56:43.155031
+ ---- batch: 010 ----
+mean label_acc: 0.736932
+mean label_loss: 0.676456
+mean loss: 0.676456
+ ---- batch: 020 ----
+mean label_acc: 0.716385
+mean label_loss: 0.691393
+mean loss: 0.691393
+
+**** EPOCH 040, STEP 1000 ****
+Current epoch: 40, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.250000
+2021-08-30 04:56:47.193115
+ ---- batch: 010 ----
+mean label_acc: 0.741580
+mean label_loss: 0.681848
+mean loss: 0.681848
+ ---- batch: 020 ----
+mean label_acc: 0.720447
+mean label_loss: 0.702796
+mean loss: 0.702796
+eval mean test_label_acc: 0.746805
+
+**** EPOCH 041, STEP 1025 ****
+Current epoch: 41, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.125000
+2021-08-30 04:56:51.945924
+ ---- batch: 010 ----
+mean label_acc: 0.749187
+mean label_loss: 0.625182
+mean loss: 0.625182
+ ---- batch: 020 ----
+mean label_acc: 0.707137
+mean label_loss: 0.719458
+mean loss: 0.719458
+
+**** EPOCH 042, STEP 1050 ****
+Current epoch: 42, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.125000
+2021-08-30 04:56:55.880064
+ ---- batch: 010 ----
+mean label_acc: 0.744712
+mean label_loss: 0.683437
+mean loss: 0.683437
+ ---- batch: 020 ----
+mean label_acc: 0.707532
+mean label_loss: 0.732687
+mean loss: 0.732687
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 043, STEP 1075 ****
+Current epoch: 43, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.125000
+2021-08-30 04:57:00.755762
+ ---- batch: 010 ----
+mean label_acc: 0.726257
+mean label_loss: 0.690092
+mean loss: 0.690092
+ ---- batch: 020 ----
+mean label_acc: 0.697425
+mean label_loss: 0.734353
+mean loss: 0.734353
+
+**** EPOCH 044, STEP 1100 ****
+Current epoch: 44, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.125000
+2021-08-30 04:57:04.634582
+ ---- batch: 010 ----
+mean label_acc: 0.733990
+mean label_loss: 0.677198
+mean loss: 0.677198
+ ---- batch: 020 ----
+mean label_acc: 0.716787
+mean label_loss: 0.701021
+mean loss: 0.701021
+eval mean test_label_acc: 0.765760
+
+**** EPOCH 045, STEP 1125 ****
+Current epoch: 45, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.125000
+2021-08-30 04:57:09.508464
+ ---- batch: 010 ----
+mean label_acc: 0.707250
+mean label_loss: 0.705846
+mean loss: 0.705846
+ ---- batch: 020 ----
+mean label_acc: 0.725232
+mean label_loss: 0.687934
+mean loss: 0.687934
+
+**** EPOCH 046, STEP 1150 ****
+Current epoch: 46, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.125000
+2021-08-30 04:57:13.403821
+ ---- batch: 010 ----
+mean label_acc: 0.701630
+mean label_loss: 0.709889
+mean loss: 0.709889
+ ---- batch: 020 ----
+mean label_acc: 0.709095
+mean label_loss: 0.733091
+mean loss: 0.733091
+eval mean test_label_acc: 0.768625
+
+**** EPOCH 047, STEP 1175 ****
+Current epoch: 47, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.125000
+2021-08-30 04:57:18.201468
+ ---- batch: 010 ----
+mean label_acc: 0.726410
+mean label_loss: 0.724532
+mean loss: 0.724532
+ ---- batch: 020 ----
+mean label_acc: 0.739487
+mean label_loss: 0.665500
+mean loss: 0.665500
+
+**** EPOCH 048, STEP 1200 ****
+Current epoch: 48, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.125000
+2021-08-30 04:57:22.118364
+ ---- batch: 010 ----
+mean label_acc: 0.736950
+mean label_loss: 0.669573
+mean loss: 0.669573
+ ---- batch: 020 ----
+mean label_acc: 0.695262
+mean label_loss: 0.714770
+mean loss: 0.714770
+eval mean test_label_acc: 0.782980
+
+**** EPOCH 049, STEP 1225 ****
+Current epoch: 49, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.125000
+2021-08-30 04:57:26.931210
+ ---- batch: 010 ----
+mean label_acc: 0.733595
+mean label_loss: 0.667369
+mean loss: 0.667369
+ ---- batch: 020 ----
+mean label_acc: 0.705112
+mean label_loss: 0.716337
+mean loss: 0.716337
+
+**** EPOCH 050, STEP 1250 ****
+Current epoch: 50, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.125000
+2021-08-30 04:57:30.838279
+ ---- batch: 010 ----
+mean label_acc: 0.701117
+mean label_loss: 0.694092
+mean loss: 0.694092
+ ---- batch: 020 ----
+mean label_acc: 0.744942
+mean label_loss: 0.651169
+mean loss: 0.651169
+eval mean test_label_acc: 0.782740
+
+**** EPOCH 051, STEP 1275 ****
+Current epoch: 51, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.125000
+2021-08-30 04:57:35.887073
+ ---- batch: 010 ----
+mean label_acc: 0.728895
+mean label_loss: 0.684786
+mean loss: 0.684786
+ ---- batch: 020 ----
+mean label_acc: 0.717667
+mean label_loss: 0.693492
+mean loss: 0.693492
+
+**** EPOCH 052, STEP 1300 ****
+Current epoch: 52, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.125000
+2021-08-30 04:57:39.882309
+ ---- batch: 010 ----
+mean label_acc: 0.764395
+mean label_loss: 0.639188
+mean loss: 0.639188
+ ---- batch: 020 ----
+mean label_acc: 0.704652
+mean label_loss: 0.723941
+mean loss: 0.723941
+eval mean test_label_acc: 0.778640
+
+**** EPOCH 053, STEP 1325 ****
+Current epoch: 53, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.125000
+2021-08-30 04:57:44.673469
+ ---- batch: 010 ----
+mean label_acc: 0.751350
+mean label_loss: 0.643211
+mean loss: 0.643211
+ ---- batch: 020 ----
+mean label_acc: 0.709165
+mean label_loss: 0.722528
+mean loss: 0.722528
+
+**** EPOCH 054, STEP 1350 ****
+Current epoch: 54, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.125000
+2021-08-30 04:57:48.485956
+ ---- batch: 010 ----
+mean label_acc: 0.728072
+mean label_loss: 0.655686
+mean loss: 0.655686
+ ---- batch: 020 ----
+mean label_acc: 0.720517
+mean label_loss: 0.706996
+mean loss: 0.706996
+eval mean test_label_acc: 0.706605
+
+**** EPOCH 055, STEP 1375 ****
+Current epoch: 55, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.125000
+2021-08-30 04:57:53.239781
+ ---- batch: 010 ----
+mean label_acc: 0.725115
+mean label_loss: 0.681805
+mean loss: 0.681805
+ ---- batch: 020 ----
+mean label_acc: 0.725967
+mean label_loss: 0.673026
+mean loss: 0.673026
+
+**** EPOCH 056, STEP 1400 ****
+Current epoch: 56, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.125000
+2021-08-30 04:57:57.180320
+ ---- batch: 010 ----
+mean label_acc: 0.693947
+mean label_loss: 0.719322
+mean loss: 0.719322
+ ---- batch: 020 ----
+mean label_acc: 0.764152
+mean label_loss: 0.642111
+mean loss: 0.642111
+eval mean test_label_acc: 0.770800
+
+**** EPOCH 057, STEP 1425 ****
+Current epoch: 57, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.125000
+2021-08-30 04:58:02.191920
+ ---- batch: 010 ----
+mean label_acc: 0.687905
+mean label_loss: 0.755818
+mean loss: 0.755818
+ ---- batch: 020 ----
+mean label_acc: 0.721860
+mean label_loss: 0.689969
+mean loss: 0.689969
+
+**** EPOCH 058, STEP 1450 ****
+Current epoch: 58, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.125000
+2021-08-30 04:58:06.112210
+ ---- batch: 010 ----
+mean label_acc: 0.736142
+mean label_loss: 0.665141
+mean loss: 0.665141
+ ---- batch: 020 ----
+mean label_acc: 0.685962
+mean label_loss: 0.736478
+mean loss: 0.736478
+eval mean test_label_acc: 0.707125
+
+**** EPOCH 059, STEP 1475 ****
+Current epoch: 59, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.125000
+2021-08-30 04:58:10.918920
+ ---- batch: 010 ----
+mean label_acc: 0.730242
+mean label_loss: 0.678804
+mean loss: 0.678804
+ ---- batch: 020 ----
+mean label_acc: 0.723935
+mean label_loss: 0.677263
+mean loss: 0.677263
+
+**** EPOCH 060, STEP 1500 ****
+Current epoch: 60, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.002000
+Current BN decay momentum: 0.125000
+2021-08-30 04:58:14.838271
+ ---- batch: 010 ----
+mean label_acc: 0.702912
+mean label_loss: 0.720056
+mean loss: 0.720056
+ ---- batch: 020 ----
+mean label_acc: 0.736157
+mean label_loss: 0.682718
+mean loss: 0.682718
+Namespace(batch_size='2,3', bn_decay_rate=0.5, bn_decay_step=20, cls_number=10, conf_thresh=0.05, dataset='sunrgbd', detector_checkpoint='none', ema_decay=0.999, eval=False, eval_interval=2, learning_rate=0.01, log_dir='./temp', lr_decay_rates='0.3, 0.3, 0.1, 0.1', lr_decay_steps='400, 600, 800, 900', max_epoch=1001, model='Pointnet2SSG', num_point=20000, print_interval=10, resume=False, save_interval=200, unlabeled_loss_weight=2.0, use_vector=False, weight_decay=0)
+unlabeled_batch_size: 3
+dataset: sunrgbd
+remove_empty_box: False
+use_3d_nms: True
+nms_iou: 0.25
+use_old_type_nms: False
+cls_nms: True
+per_class_proposal: True
+conf_thresh: 0.05
+obj_threshold: 0.9
+cls_threshold: 0.9
+use_lhs: True
+iou_threshold: 0.25
+use_unlabeled_obj_loss: False
+use_unlabeled_vote_loss: False
+vote_loss_size_factor: 1.0
+samecls_match: False
+
+**** EPOCH 000, STEP 0 ****
+Current epoch: 0, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:58:23.021190
+ ---- batch: 010 ----
+mean label_acc: 0.588115
+mean label_loss: 1.192841
+mean loss: 1.192841
+ ---- batch: 020 ----
+mean label_acc: 0.744705
+mean label_loss: 0.721771
+mean loss: 0.721771
+
+**** EPOCH 001, STEP 25 ****
+Current epoch: 1, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:58:27.312978
+ ---- batch: 010 ----
+mean label_acc: 0.756397
+mean label_loss: 0.641276
+mean loss: 0.641276
+ ---- batch: 020 ----
+mean label_acc: 0.667025
+mean label_loss: 0.775206
+mean loss: 0.775206
+
+**** EPOCH 002, STEP 50 ****
+Current epoch: 2, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:58:31.229549
+ ---- batch: 010 ----
+mean label_acc: 0.715467
+mean label_loss: 0.700837
+mean loss: 0.700837
+ ---- batch: 020 ----
+mean label_acc: 0.734605
+mean label_loss: 0.686813
+mean loss: 0.686813
+eval mean test_label_acc: 0.778480
+
+**** EPOCH 003, STEP 75 ****
+Current epoch: 3, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:58:35.989879
+ ---- batch: 010 ----
+mean label_acc: 0.741860
+mean label_loss: 0.720793
+mean loss: 0.720793
+ ---- batch: 020 ----
+mean label_acc: 0.706867
+mean label_loss: 0.735131
+mean loss: 0.735131
+
+**** EPOCH 004, STEP 100 ****
+Current epoch: 4, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:58:39.893572
+ ---- batch: 010 ----
+mean label_acc: 0.676970
+mean label_loss: 0.757838
+mean loss: 0.757838
+ ---- batch: 020 ----
+mean label_acc: 0.772692
+mean label_loss: 0.704452
+mean loss: 0.704452
+eval mean test_label_acc: 0.756465
+
+**** EPOCH 005, STEP 125 ****
+Current epoch: 5, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:58:44.776177
+ ---- batch: 010 ----
+mean label_acc: 0.665405
+mean label_loss: 0.793682
+mean loss: 0.793682
+ ---- batch: 020 ----
+mean label_acc: 0.757275
+mean label_loss: 0.652056
+mean loss: 0.652056
+
+**** EPOCH 006, STEP 150 ****
+Current epoch: 6, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:58:48.619373
+ ---- batch: 010 ----
+mean label_acc: 0.702762
+mean label_loss: 0.755107
+mean loss: 0.755107
+ ---- batch: 020 ----
+mean label_acc: 0.756842
+mean label_loss: 0.643234
+mean loss: 0.643234
+eval mean test_label_acc: 0.749720
+
+**** EPOCH 007, STEP 175 ****
+Current epoch: 7, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:58:53.380793
+ ---- batch: 010 ----
+mean label_acc: 0.714475
+mean label_loss: 0.734897
+mean loss: 0.734897
+ ---- batch: 020 ----
+mean label_acc: 0.716012
+mean label_loss: 0.723137
+mean loss: 0.723137
+
+**** EPOCH 008, STEP 200 ****
+Current epoch: 8, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:58:57.233718
+ ---- batch: 010 ----
+mean label_acc: 0.688247
+mean label_loss: 0.756930
+mean loss: 0.756930
+ ---- batch: 020 ----
+mean label_acc: 0.741310
+mean label_loss: 0.697099
+mean loss: 0.697099
+eval mean test_label_acc: 0.368330
+
+**** EPOCH 009, STEP 225 ****
+Current epoch: 9, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:59:02.027274
+ ---- batch: 010 ----
+mean label_acc: 0.704765
+mean label_loss: 0.722347
+mean loss: 0.722347
+ ---- batch: 020 ----
+mean label_acc: 0.708957
+mean label_loss: 0.728325
+mean loss: 0.728325
+
+**** EPOCH 010, STEP 250 ****
+Current epoch: 10, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:59:05.857512
+ ---- batch: 010 ----
+mean label_acc: 0.762212
+mean label_loss: 0.630974
+mean loss: 0.630974
+ ---- batch: 020 ----
+mean label_acc: 0.664297
+mean label_loss: 0.780584
+mean loss: 0.780584
+eval mean test_label_acc: 0.771085
+
+**** EPOCH 011, STEP 275 ****
+Current epoch: 11, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:59:10.789277
+ ---- batch: 010 ----
+mean label_acc: 0.724850
+mean label_loss: 0.720163
+mean loss: 0.720163
+ ---- batch: 020 ----
+mean label_acc: 0.706150
+mean label_loss: 0.711570
+mean loss: 0.711570
+
+**** EPOCH 012, STEP 300 ****
+Current epoch: 12, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:59:14.753141
+ ---- batch: 010 ----
+mean label_acc: 0.726147
+mean label_loss: 0.727372
+mean loss: 0.727372
+ ---- batch: 020 ----
+mean label_acc: 0.699075
+mean label_loss: 0.728283
+mean loss: 0.728283
+eval mean test_label_acc: 0.772830
+
+**** EPOCH 013, STEP 325 ****
+Current epoch: 13, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:59:19.542694
+ ---- batch: 010 ----
+mean label_acc: 0.698352
+mean label_loss: 0.758527
+mean loss: 0.758527
+ ---- batch: 020 ----
+mean label_acc: 0.733027
+mean label_loss: 0.687144
+mean loss: 0.687144
+
+**** EPOCH 014, STEP 350 ****
+Current epoch: 14, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:59:23.402496
+ ---- batch: 010 ----
+mean label_acc: 0.719965
+mean label_loss: 0.715631
+mean loss: 0.715631
+ ---- batch: 020 ----
+mean label_acc: 0.730660
+mean label_loss: 0.682912
+mean loss: 0.682912
+eval mean test_label_acc: 0.569445
+
+**** EPOCH 015, STEP 375 ****
+Current epoch: 15, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:59:28.311689
+ ---- batch: 010 ----
+mean label_acc: 0.720915
+mean label_loss: 0.704448
+mean loss: 0.704448
+ ---- batch: 020 ----
+mean label_acc: 0.700377
+mean label_loss: 0.715876
+mean loss: 0.715876
+
+**** EPOCH 016, STEP 400 ****
+Current epoch: 16, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:59:32.198024
+ ---- batch: 010 ----
+mean label_acc: 0.708215
+mean label_loss: 0.719237
+mean loss: 0.719237
+ ---- batch: 020 ----
+mean label_acc: 0.716647
+mean label_loss: 0.710882
+mean loss: 0.710882
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 017, STEP 425 ****
+Current epoch: 17, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:59:37.102587
+ ---- batch: 010 ----
+mean label_acc: 0.706842
+mean label_loss: 0.718138
+mean loss: 0.718138
+ ---- batch: 020 ----
+mean label_acc: 0.733430
+mean label_loss: 0.695293
+mean loss: 0.695293
+
+**** EPOCH 018, STEP 450 ****
+Current epoch: 18, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:59:40.971478
+ ---- batch: 010 ----
+mean label_acc: 0.711292
+mean label_loss: 0.705196
+mean loss: 0.705196
+ ---- batch: 020 ----
+mean label_acc: 0.703802
+mean label_loss: 0.740142
+mean loss: 0.740142
+eval mean test_label_acc: 0.769110
+
+**** EPOCH 019, STEP 475 ****
+Current epoch: 19, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:59:45.934490
+ ---- batch: 010 ----
+mean label_acc: 0.715962
+mean label_loss: 0.713765
+mean loss: 0.713765
+ ---- batch: 020 ----
+mean label_acc: 0.773975
+mean label_loss: 0.632510
+mean loss: 0.632510
+
+**** EPOCH 020, STEP 500 ****
+Current epoch: 20, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 04:59:49.784398
+ ---- batch: 010 ----
+mean label_acc: 0.749035
+mean label_loss: 0.703080
+mean loss: 0.703080
+ ---- batch: 020 ----
+mean label_acc: 0.706382
+mean label_loss: 0.746785
+mean loss: 0.746785
+eval mean test_label_acc: 0.781540
+
+**** EPOCH 021, STEP 525 ****
+Current epoch: 21, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:59:54.621745
+ ---- batch: 010 ----
+mean label_acc: 0.738955
+mean label_loss: 0.684164
+mean loss: 0.684164
+ ---- batch: 020 ----
+mean label_acc: 0.712080
+mean label_loss: 0.689923
+mean loss: 0.689923
+
+**** EPOCH 022, STEP 550 ****
+Current epoch: 22, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 04:59:58.624750
+ ---- batch: 010 ----
+mean label_acc: 0.726787
+mean label_loss: 0.703493
+mean loss: 0.703493
+ ---- batch: 020 ----
+mean label_acc: 0.698865
+mean label_loss: 0.735363
+mean loss: 0.735363
+eval mean test_label_acc: 0.763395
+
+**** EPOCH 023, STEP 575 ****
+Current epoch: 23, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:00:03.476596
+ ---- batch: 010 ----
+mean label_acc: 0.699145
+mean label_loss: 0.722889
+mean loss: 0.722889
+ ---- batch: 020 ----
+mean label_acc: 0.738965
+mean label_loss: 0.672062
+mean loss: 0.672062
+
+**** EPOCH 024, STEP 600 ****
+Current epoch: 24, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:00:07.443250
+ ---- batch: 010 ----
+mean label_acc: 0.712947
+mean label_loss: 0.717917
+mean loss: 0.717917
+ ---- batch: 020 ----
+mean label_acc: 0.686150
+mean label_loss: 0.724538
+mean loss: 0.724538
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 025, STEP 625 ****
+Current epoch: 25, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:00:12.418728
+ ---- batch: 010 ----
+mean label_acc: 0.700595
+mean label_loss: 0.743871
+mean loss: 0.743871
+ ---- batch: 020 ----
+mean label_acc: 0.722475
+mean label_loss: 0.714640
+mean loss: 0.714640
+
+**** EPOCH 026, STEP 650 ****
+Current epoch: 26, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:00:16.704553
+ ---- batch: 010 ----
+mean label_acc: 0.733112
+mean label_loss: 0.678233
+mean loss: 0.678233
+ ---- batch: 020 ----
+mean label_acc: 0.724597
+mean label_loss: 0.684902
+mean loss: 0.684902
+eval mean test_label_acc: 0.670420
+
+**** EPOCH 027, STEP 675 ****
+Current epoch: 27, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:00:22.020249
+ ---- batch: 010 ----
+mean label_acc: 0.703177
+mean label_loss: 0.721099
+mean loss: 0.721099
+ ---- batch: 020 ----
+mean label_acc: 0.753147
+mean label_loss: 0.652048
+mean loss: 0.652048
+
+**** EPOCH 028, STEP 700 ****
+Current epoch: 28, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:00:26.720971
+ ---- batch: 010 ----
+mean label_acc: 0.761365
+mean label_loss: 0.634009
+mean loss: 0.634009
+ ---- batch: 020 ----
+mean label_acc: 0.691500
+mean label_loss: 0.731153
+mean loss: 0.731153
+eval mean test_label_acc: 0.762200
+
+**** EPOCH 029, STEP 725 ****
+Current epoch: 29, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:00:31.660811
+ ---- batch: 010 ----
+mean label_acc: 0.718330
+mean label_loss: 0.683377
+mean loss: 0.683377
+ ---- batch: 020 ----
+mean label_acc: 0.744650
+mean label_loss: 0.676415
+mean loss: 0.676415
+
+**** EPOCH 030, STEP 750 ****
+Current epoch: 30, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:00:35.869930
+ ---- batch: 010 ----
+mean label_acc: 0.699232
+mean label_loss: 0.734774
+mean loss: 0.734774
+Namespace(batch_size='2,3', bn_decay_rate=0.5, bn_decay_step=20, cls_number=10, conf_thresh=0.05, dataset='sunrgbd', detector_checkpoint='none', ema_decay=0.999, eval=False, eval_interval=2, learning_rate=0.01, log_dir='./temp', lr_decay_rates='1.0, 1.0, 1.0, 1.0', lr_decay_steps='400, 600, 800, 900', max_epoch=1001, model='Pointnet2SSG', num_point=20000, print_interval=10, resume=False, save_interval=200, unlabeled_loss_weight=2.0, use_vector=False, weight_decay=0)
+unlabeled_batch_size: 3
+dataset: sunrgbd
+remove_empty_box: False
+use_3d_nms: True
+nms_iou: 0.25
+use_old_type_nms: False
+cls_nms: True
+per_class_proposal: True
+conf_thresh: 0.05
+obj_threshold: 0.9
+cls_threshold: 0.9
+use_lhs: True
+iou_threshold: 0.25
+use_unlabeled_obj_loss: False
+use_unlabeled_vote_loss: False
+vote_loss_size_factor: 1.0
+samecls_match: False
+
+**** EPOCH 000, STEP 0 ****
+Current epoch: 0, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:01:32.900449
+ ---- batch: 010 ----
+mean label_acc: 0.651745
+mean label_loss: 1.224790
+mean loss: 1.224790
+ ---- batch: 020 ----
+mean label_acc: 0.650427
+mean label_loss: 0.871797
+mean loss: 0.871797
+
+**** EPOCH 001, STEP 25 ****
+Current epoch: 1, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:01:37.238238
+ ---- batch: 010 ----
+mean label_acc: 0.738655
+mean label_loss: 0.657104
+mean loss: 0.657104
+ ---- batch: 020 ----
+mean label_acc: 0.695815
+mean label_loss: 0.746154
+mean loss: 0.746154
+
+**** EPOCH 002, STEP 50 ****
+Current epoch: 2, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:01:41.188056
+ ---- batch: 010 ----
+mean label_acc: 0.724322
+mean label_loss: 0.721496
+mean loss: 0.721496
+ ---- batch: 020 ----
+mean label_acc: 0.707610
+mean label_loss: 0.714623
+mean loss: 0.714623
+eval mean test_label_acc: 0.753965
+
+**** EPOCH 003, STEP 75 ****
+Current epoch: 3, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:01:45.952423
+ ---- batch: 010 ----
+mean label_acc: 0.695115
+mean label_loss: 0.720809
+mean loss: 0.720809
+ ---- batch: 020 ----
+mean label_acc: 0.761937
+mean label_loss: 0.663636
+mean loss: 0.663636
+
+**** EPOCH 004, STEP 100 ****
+Current epoch: 4, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:01:49.860245
+ ---- batch: 010 ----
+mean label_acc: 0.715550
+mean label_loss: 0.713224
+mean loss: 0.713224
+ ---- batch: 020 ----
+mean label_acc: 0.714190
+mean label_loss: 0.719542
+mean loss: 0.719542
+eval mean test_label_acc: 0.770640
+
+**** EPOCH 005, STEP 125 ****
+Current epoch: 5, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:01:54.759885
+ ---- batch: 010 ----
+mean label_acc: 0.699185
+mean label_loss: 0.739731
+mean loss: 0.739731
+ ---- batch: 020 ----
+mean label_acc: 0.735727
+mean label_loss: 0.667427
+mean loss: 0.667427
+
+**** EPOCH 006, STEP 150 ****
+Current epoch: 6, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:01:58.653723
+ ---- batch: 010 ----
+mean label_acc: 0.720320
+mean label_loss: 0.699592
+mean loss: 0.699592
+ ---- batch: 020 ----
+mean label_acc: 0.715335
+mean label_loss: 0.707685
+mean loss: 0.707685
+eval mean test_label_acc: 0.783710
+
+**** EPOCH 007, STEP 175 ****
+Current epoch: 7, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:02:03.551941
+ ---- batch: 010 ----
+mean label_acc: 0.724217
+mean label_loss: 0.704058
+mean loss: 0.704058
+ ---- batch: 020 ----
+mean label_acc: 0.717472
+mean label_loss: 0.701131
+mean loss: 0.701131
+
+**** EPOCH 008, STEP 200 ****
+Current epoch: 8, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:02:07.538424
+ ---- batch: 010 ----
+mean label_acc: 0.750385
+mean label_loss: 0.643259
+mean loss: 0.643259
+ ---- batch: 020 ----
+mean label_acc: 0.697730
+mean label_loss: 0.720950
+mean loss: 0.720950
+eval mean test_label_acc: 0.779085
+
+**** EPOCH 009, STEP 225 ****
+Current epoch: 9, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:02:12.499265
+ ---- batch: 010 ----
+mean label_acc: 0.698445
+mean label_loss: 0.715741
+mean loss: 0.715741
+ ---- batch: 020 ----
+mean label_acc: 0.724920
+mean label_loss: 0.705497
+mean loss: 0.705497
+
+**** EPOCH 010, STEP 250 ****
+Current epoch: 10, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:02:16.317827
+ ---- batch: 010 ----
+mean label_acc: 0.752610
+mean label_loss: 0.681827
+mean loss: 0.681827
+ ---- batch: 020 ----
+mean label_acc: 0.693832
+mean label_loss: 0.764810
+mean loss: 0.764810
+eval mean test_label_acc: 0.770695
+
+**** EPOCH 011, STEP 275 ****
+Current epoch: 11, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:02:21.187396
+ ---- batch: 010 ----
+mean label_acc: 0.723012
+mean label_loss: 0.718902
+mean loss: 0.718902
+ ---- batch: 020 ----
+mean label_acc: 0.726445
+mean label_loss: 0.707287
+mean loss: 0.707287
+
+**** EPOCH 012, STEP 300 ****
+Current epoch: 12, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:02:25.104022
+ ---- batch: 010 ----
+mean label_acc: 0.672892
+mean label_loss: 0.768950
+mean loss: 0.768950
+ ---- batch: 020 ----
+mean label_acc: 0.754890
+mean label_loss: 0.671895
+mean loss: 0.671895
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 013, STEP 325 ****
+Current epoch: 13, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:02:29.923992
+ ---- batch: 010 ----
+mean label_acc: 0.716407
+mean label_loss: 0.725431
+mean loss: 0.725431
+ ---- batch: 020 ----
+mean label_acc: 0.740437
+mean label_loss: 0.704793
+mean loss: 0.704793
+
+**** EPOCH 014, STEP 350 ****
+Current epoch: 14, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:02:33.785203
+ ---- batch: 010 ----
+mean label_acc: 0.711215
+mean label_loss: 0.732449
+mean loss: 0.732449
+ ---- batch: 020 ----
+mean label_acc: 0.736887
+mean label_loss: 0.722530
+mean loss: 0.722530
+eval mean test_label_acc: 0.712475
+
+**** EPOCH 015, STEP 375 ****
+Current epoch: 15, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:02:38.610715
+ ---- batch: 010 ----
+mean label_acc: 0.735005
+mean label_loss: 0.697826
+mean loss: 0.697826
+ ---- batch: 020 ----
+mean label_acc: 0.730945
+mean label_loss: 0.716428
+mean loss: 0.716428
+
+**** EPOCH 016, STEP 400 ****
+Current epoch: 16, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:02:42.507232
+ ---- batch: 010 ----
+mean label_acc: 0.712067
+mean label_loss: 0.727571
+mean loss: 0.727571
+ ---- batch: 020 ----
+mean label_acc: 0.726637
+mean label_loss: 0.701761
+mean loss: 0.701761
+eval mean test_label_acc: 0.605555
+
+**** EPOCH 017, STEP 425 ****
+Current epoch: 17, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:02:47.319558
+ ---- batch: 010 ----
+mean label_acc: 0.698537
+mean label_loss: 0.737406
+mean loss: 0.737406
+ ---- batch: 020 ----
+mean label_acc: 0.712330
+mean label_loss: 0.727108
+mean loss: 0.727108
+
+**** EPOCH 018, STEP 450 ****
+Current epoch: 18, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:02:51.494539
+ ---- batch: 010 ----
+mean label_acc: 0.759462
+mean label_loss: 0.663577
+mean loss: 0.663577
+ ---- batch: 020 ----
+mean label_acc: 0.681792
+mean label_loss: 0.749295
+mean loss: 0.749295
+eval mean test_label_acc: 0.770070
+
+**** EPOCH 019, STEP 475 ****
+Current epoch: 19, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:02:56.393642
+ ---- batch: 010 ----
+mean label_acc: 0.708690
+mean label_loss: 0.714342
+mean loss: 0.714342
+ ---- batch: 020 ----
+mean label_acc: 0.708122
+mean label_loss: 0.739363
+mean loss: 0.739363
+
+**** EPOCH 020, STEP 500 ****
+Current epoch: 20, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:03:00.318918
+ ---- batch: 010 ----
+mean label_acc: 0.657445
+mean label_loss: 0.797925
+mean loss: 0.797925
+ ---- batch: 020 ----
+mean label_acc: 0.749600
+mean label_loss: 0.683302
+mean loss: 0.683302
+eval mean test_label_acc: 0.770505
+
+**** EPOCH 021, STEP 525 ****
+Current epoch: 21, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:03:05.142327
+ ---- batch: 010 ----
+mean label_acc: 0.741330
+mean label_loss: 0.705396
+mean loss: 0.705396
+ ---- batch: 020 ----
+mean label_acc: 0.710635
+mean label_loss: 0.726263
+mean loss: 0.726263
+
+**** EPOCH 022, STEP 550 ****
+Current epoch: 22, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:03:09.028561
+ ---- batch: 010 ----
+mean label_acc: 0.751647
+mean label_loss: 0.662682
+mean loss: 0.662682
+ ---- batch: 020 ----
+mean label_acc: 0.732077
+mean label_loss: 0.685728
+mean loss: 0.685728
+eval mean test_label_acc: 0.381485
+
+**** EPOCH 023, STEP 575 ****
+Current epoch: 23, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:03:13.955045
+ ---- batch: 010 ----
+mean label_acc: 0.705187
+mean label_loss: 0.725526
+mean loss: 0.725526
+ ---- batch: 020 ----
+mean label_acc: 0.710517
+mean label_loss: 0.725519
+mean loss: 0.725519
+
+**** EPOCH 024, STEP 600 ****
+Current epoch: 24, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:03:17.950239
+ ---- batch: 010 ----
+mean label_acc: 0.755772
+mean label_loss: 0.667871
+mean loss: 0.667871
+ ---- batch: 020 ----
+mean label_acc: 0.695520
+mean label_loss: 0.742431
+mean loss: 0.742431
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 025, STEP 625 ****
+Current epoch: 25, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:03:22.791251
+ ---- batch: 010 ----
+mean label_acc: 0.666247
+mean label_loss: 0.775406
+mean loss: 0.775406
+ ---- batch: 020 ----
+mean label_acc: 0.755905
+mean label_loss: 0.666831
+mean loss: 0.666831
+
+**** EPOCH 026, STEP 650 ****
+Current epoch: 26, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:03:26.636994
+ ---- batch: 010 ----
+mean label_acc: 0.708465
+mean label_loss: 0.764270
+mean loss: 0.764270
+ ---- batch: 020 ----
+mean label_acc: 0.743580
+mean label_loss: 0.694103
+mean loss: 0.694103
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 027, STEP 675 ****
+Current epoch: 27, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:03:31.519221
+ ---- batch: 010 ----
+mean label_acc: 0.725920
+mean label_loss: 0.705203
+mean loss: 0.705203
+ ---- batch: 020 ----
+mean label_acc: 0.745602
+mean label_loss: 0.683487
+mean loss: 0.683487
+
+**** EPOCH 028, STEP 700 ****
+Current epoch: 28, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:03:35.465428
+ ---- batch: 010 ----
+mean label_acc: 0.709112
+mean label_loss: 0.730806
+mean loss: 0.730806
+ ---- batch: 020 ----
+mean label_acc: 0.735605
+mean label_loss: 0.700364
+mean loss: 0.700364
+eval mean test_label_acc: 0.735975
+
+**** EPOCH 029, STEP 725 ****
+Current epoch: 29, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:03:40.510580
+ ---- batch: 010 ----
+mean label_acc: 0.679512
+mean label_loss: 0.753573
+mean loss: 0.753573
+ ---- batch: 020 ----
+mean label_acc: 0.753585
+mean label_loss: 0.691845
+mean loss: 0.691845
+
+**** EPOCH 030, STEP 750 ****
+Current epoch: 30, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:03:44.432788
+ ---- batch: 010 ----
+mean label_acc: 0.684110
+mean label_loss: 0.773351
+mean loss: 0.773351
+ ---- batch: 020 ----
+mean label_acc: 0.765860
+mean label_loss: 0.659676
+mean loss: 0.659676
+eval mean test_label_acc: 0.646290
+
+**** EPOCH 031, STEP 775 ****
+Current epoch: 31, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:03:49.311074
+ ---- batch: 010 ----
+mean label_acc: 0.725075
+mean label_loss: 0.710834
+mean loss: 0.710834
+ ---- batch: 020 ----
+mean label_acc: 0.709227
+mean label_loss: 0.722655
+mean loss: 0.722655
+
+**** EPOCH 032, STEP 800 ****
+Current epoch: 32, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:03:53.371891
+ ---- batch: 010 ----
+mean label_acc: 0.707225
+mean label_loss: 0.735670
+mean loss: 0.735670
+ ---- batch: 020 ----
+mean label_acc: 0.740310
+mean label_loss: 0.675343
+mean loss: 0.675343
+eval mean test_label_acc: 0.635150
+
+**** EPOCH 033, STEP 825 ****
+Current epoch: 33, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:03:58.241183
+ ---- batch: 010 ----
+mean label_acc: 0.747882
+mean label_loss: 0.677112
+mean loss: 0.677112
+ ---- batch: 020 ----
+mean label_acc: 0.695545
+mean label_loss: 0.744806
+mean loss: 0.744806
+
+**** EPOCH 034, STEP 850 ****
+Current epoch: 34, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:04:02.205354
+ ---- batch: 010 ----
+mean label_acc: 0.685545
+mean label_loss: 0.747504
+mean loss: 0.747504
+ ---- batch: 020 ----
+mean label_acc: 0.742640
+mean label_loss: 0.690947
+mean loss: 0.690947
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 035, STEP 875 ****
+Current epoch: 35, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:04:07.128598
+ ---- batch: 010 ----
+mean label_acc: 0.744592
+mean label_loss: 0.688889
+mean loss: 0.688889
+ ---- batch: 020 ----
+mean label_acc: 0.700135
+mean label_loss: 0.735134
+mean loss: 0.735134
+
+**** EPOCH 036, STEP 900 ****
+Current epoch: 36, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:04:11.453250
+ ---- batch: 010 ----
+mean label_acc: 0.741642
+mean label_loss: 0.683645
+mean loss: 0.683645
+ ---- batch: 020 ----
+mean label_acc: 0.684225
+mean label_loss: 0.759998
+mean loss: 0.759998
+eval mean test_label_acc: 0.634985
+
+**** EPOCH 037, STEP 925 ****
+Current epoch: 37, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:04:16.630217
+ ---- batch: 010 ----
+mean label_acc: 0.720355
+mean label_loss: 0.709945
+mean loss: 0.709945
+ ---- batch: 020 ----
+mean label_acc: 0.723282
+mean label_loss: 0.708317
+mean loss: 0.708317
+
+**** EPOCH 038, STEP 950 ****
+Current epoch: 38, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:04:20.686522
+ ---- batch: 010 ----
+mean label_acc: 0.692547
+mean label_loss: 0.736233
+mean loss: 0.736233
+ ---- batch: 020 ----
+mean label_acc: 0.737017
+mean label_loss: 0.693912
+mean loss: 0.693912
+eval mean test_label_acc: 0.416100
+
+**** EPOCH 039, STEP 975 ****
+Current epoch: 39, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:04:25.610728
+ ---- batch: 010 ----
+mean label_acc: 0.720162
+mean label_loss: 0.706347
+mean loss: 0.706347
+ ---- batch: 020 ----
+mean label_acc: 0.709530
+mean label_loss: 0.727571
+mean loss: 0.727571
+
+**** EPOCH 040, STEP 1000 ****
+Current epoch: 40, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:04:29.642887
+ ---- batch: 010 ----
+mean label_acc: 0.709100
+mean label_loss: 0.727986
+mean loss: 0.727986
+ ---- batch: 020 ----
+mean label_acc: 0.740322
+mean label_loss: 0.682607
+mean loss: 0.682607
+eval mean test_label_acc: 0.761425
+
+**** EPOCH 041, STEP 1025 ****
+Current epoch: 41, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:04:34.510493
+ ---- batch: 010 ----
+mean label_acc: 0.738782
+mean label_loss: 0.688430
+mean loss: 0.688430
+ ---- batch: 020 ----
+mean label_acc: 0.700822
+mean label_loss: 0.738351
+mean loss: 0.738351
+
+**** EPOCH 042, STEP 1050 ****
+Current epoch: 42, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:04:38.531008
+ ---- batch: 010 ----
+mean label_acc: 0.686695
+mean label_loss: 0.752011
+mean loss: 0.752011
+ ---- batch: 020 ----
+mean label_acc: 0.758512
+mean label_loss: 0.682420
+mean loss: 0.682420
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 043, STEP 1075 ****
+Current epoch: 43, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:04:43.558569
+ ---- batch: 010 ----
+mean label_acc: 0.710135
+mean label_loss: 0.729390
+mean loss: 0.729390
+ ---- batch: 020 ----
+mean label_acc: 0.708242
+mean label_loss: 0.721225
+mean loss: 0.721225
+
+**** EPOCH 044, STEP 1100 ****
+Current epoch: 44, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:04:47.645191
+ ---- batch: 010 ----
+mean label_acc: 0.716115
+mean label_loss: 0.710211
+mean loss: 0.710211
+ ---- batch: 020 ----
+mean label_acc: 0.694805
+mean label_loss: 0.756808
+mean loss: 0.756808
+eval mean test_label_acc: 0.767955
+
+**** EPOCH 045, STEP 1125 ****
+Current epoch: 45, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:04:53.178050
+ ---- batch: 010 ----
+mean label_acc: 0.696620
+mean label_loss: 0.744549
+mean loss: 0.744549
+ ---- batch: 020 ----
+mean label_acc: 0.763522
+mean label_loss: 0.650268
+mean loss: 0.650268
+
+**** EPOCH 046, STEP 1150 ****
+Current epoch: 46, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:04:57.096881
+ ---- batch: 010 ----
+mean label_acc: 0.756395
+mean label_loss: 0.665287
+mean loss: 0.665287
+ ---- batch: 020 ----
+mean label_acc: 0.681532
+mean label_loss: 0.747059
+mean loss: 0.747059
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 047, STEP 1175 ****
+Current epoch: 47, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:05:01.999073
+ ---- batch: 010 ----
+mean label_acc: 0.715407
+mean label_loss: 0.711317
+mean loss: 0.711317
+ ---- batch: 020 ----
+mean label_acc: 0.737595
+mean label_loss: 0.684611
+mean loss: 0.684611
+
+**** EPOCH 048, STEP 1200 ****
+Current epoch: 48, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:05:05.855931
+ ---- batch: 010 ----
+mean label_acc: 0.704682
+mean label_loss: 0.716537
+mean loss: 0.716537
+ ---- batch: 020 ----
+mean label_acc: 0.715880
+mean label_loss: 0.719742
+mean loss: 0.719742
+eval mean test_label_acc: 0.770570
+
+**** EPOCH 049, STEP 1225 ****
+Current epoch: 49, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:05:10.848371
+ ---- batch: 010 ----
+mean label_acc: 0.711765
+mean label_loss: 0.731063
+mean loss: 0.731063
+ ---- batch: 020 ----
+mean label_acc: 0.725850
+mean label_loss: 0.683323
+mean loss: 0.683323
+
+**** EPOCH 050, STEP 1250 ****
+Current epoch: 50, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:05:14.993977
+ ---- batch: 010 ----
+mean label_acc: 0.711785
+mean label_loss: 0.714760
+mean loss: 0.714760
+ ---- batch: 020 ----
+mean label_acc: 0.700592
+mean label_loss: 0.728891
+mean loss: 0.728891
+eval mean test_label_acc: 0.539630
+
+**** EPOCH 051, STEP 1275 ****
+Current epoch: 51, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:05:20.234056
+ ---- batch: 010 ----
+mean label_acc: 0.731767
+mean label_loss: 0.689311
+mean loss: 0.689311
+ ---- batch: 020 ----
+mean label_acc: 0.687862
+mean label_loss: 0.750432
+mean loss: 0.750432
+
+**** EPOCH 052, STEP 1300 ****
+Current epoch: 52, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:05:24.216932
+ ---- batch: 010 ----
+mean label_acc: 0.705345
+mean label_loss: 0.731418
+mean loss: 0.731418
+ ---- batch: 020 ----
+mean label_acc: 0.745035
+mean label_loss: 0.684344
+mean loss: 0.684344
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 053, STEP 1325 ****
+Current epoch: 53, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:05:29.084316
+ ---- batch: 010 ----
+mean label_acc: 0.772385
+mean label_loss: 0.636574
+mean loss: 0.636574
+ ---- batch: 020 ----
+mean label_acc: 0.704195
+mean label_loss: 0.725274
+mean loss: 0.725274
+
+**** EPOCH 054, STEP 1350 ****
+Current epoch: 54, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:05:33.162571
+ ---- batch: 010 ----
+mean label_acc: 0.706032
+mean label_loss: 0.731461
+mean loss: 0.731461
+ ---- batch: 020 ----
+mean label_acc: 0.723655
+mean label_loss: 0.713167
+mean loss: 0.713167
+eval mean test_label_acc: 0.733360
+
+**** EPOCH 055, STEP 1375 ****
+Current epoch: 55, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:05:37.928276
+ ---- batch: 010 ----
+mean label_acc: 0.736972
+mean label_loss: 0.683473
+mean loss: 0.683473
+ ---- batch: 020 ----
+mean label_acc: 0.696160
+mean label_loss: 0.734988
+mean loss: 0.734988
+
+**** EPOCH 056, STEP 1400 ****
+Current epoch: 56, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:05:41.816326
+ ---- batch: 010 ----
+mean label_acc: 0.666977
+mean label_loss: 0.762995
+mean loss: 0.762995
+ ---- batch: 020 ----
+mean label_acc: 0.708442
+mean label_loss: 0.723705
+mean loss: 0.723705
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 057, STEP 1425 ****
+Current epoch: 57, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:05:46.572287
+ ---- batch: 010 ----
+mean label_acc: 0.754702
+mean label_loss: 0.671585
+mean loss: 0.671585
+ ---- batch: 020 ----
+mean label_acc: 0.691820
+mean label_loss: 0.754003
+mean loss: 0.754003
+
+**** EPOCH 058, STEP 1450 ****
+Current epoch: 58, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:05:50.419942
+ ---- batch: 010 ----
+mean label_acc: 0.744285
+mean label_loss: 0.668373
+mean loss: 0.668373
+ ---- batch: 020 ----
+mean label_acc: 0.726640
+mean label_loss: 0.692170
+mean loss: 0.692170
+eval mean test_label_acc: 0.673155
+
+**** EPOCH 059, STEP 1475 ****
+Current epoch: 59, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:05:55.211173
+ ---- batch: 010 ----
+mean label_acc: 0.709862
+mean label_loss: 0.711603
+mean loss: 0.711603
+ ---- batch: 020 ----
+mean label_acc: 0.727855
+mean label_loss: 0.699607
+mean loss: 0.699607
+
+**** EPOCH 060, STEP 1500 ****
+Current epoch: 60, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:05:59.074249
+ ---- batch: 010 ----
+mean label_acc: 0.705080
+mean label_loss: 0.722132
+mean loss: 0.722132
+ ---- batch: 020 ----
+mean label_acc: 0.690907
+mean label_loss: 0.735594
+mean loss: 0.735594
+eval mean test_label_acc: 0.769555
+
+**** EPOCH 061, STEP 1525 ****
+Current epoch: 61, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:06:03.919688
+ ---- batch: 010 ----
+mean label_acc: 0.710180
+mean label_loss: 0.741479
+mean loss: 0.741479
+ ---- batch: 020 ----
+mean label_acc: 0.716127
+mean label_loss: 0.717566
+mean loss: 0.717566
+
+**** EPOCH 062, STEP 1550 ****
+Current epoch: 62, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:06:07.779338
+ ---- batch: 010 ----
+mean label_acc: 0.669305
+mean label_loss: 0.771174
+mean loss: 0.771174
+ ---- batch: 020 ----
+mean label_acc: 0.763740
+mean label_loss: 0.650606
+mean loss: 0.650606
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 063, STEP 1575 ****
+Current epoch: 63, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:06:12.561765
+ ---- batch: 010 ----
+mean label_acc: 0.735642
+mean label_loss: 0.687775
+mean loss: 0.687775
+ ---- batch: 020 ----
+mean label_acc: 0.729947
+mean label_loss: 0.703782
+mean loss: 0.703782
+
+**** EPOCH 064, STEP 1600 ****
+Current epoch: 64, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:06:16.477687
+ ---- batch: 010 ----
+mean label_acc: 0.722867
+mean label_loss: 0.699895
+mean loss: 0.699895
+ ---- batch: 020 ----
+mean label_acc: 0.707097
+mean label_loss: 0.734371
+mean loss: 0.734371
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 065, STEP 1625 ****
+Current epoch: 65, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:06:21.201675
+ ---- batch: 010 ----
+mean label_acc: 0.683805
+mean label_loss: 0.756604
+mean loss: 0.756604
+ ---- batch: 020 ----
+mean label_acc: 0.732367
+mean label_loss: 0.698810
+mean loss: 0.698810
+
+**** EPOCH 066, STEP 1650 ****
+Current epoch: 66, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:06:25.038473
+ ---- batch: 010 ----
+mean label_acc: 0.748640
+mean label_loss: 0.650840
+mean loss: 0.650840
+ ---- batch: 020 ----
+mean label_acc: 0.676160
+mean label_loss: 0.768543
+mean loss: 0.768543
+eval mean test_label_acc: 0.736860
+
+**** EPOCH 067, STEP 1675 ****
+Current epoch: 67, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:06:29.803507
+ ---- batch: 010 ----
+mean label_acc: 0.757300
+mean label_loss: 0.651749
+mean loss: 0.651749
+ ---- batch: 020 ----
+mean label_acc: 0.732565
+mean label_loss: 0.697082
+mean loss: 0.697082
+
+**** EPOCH 068, STEP 1700 ****
+Current epoch: 68, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:06:33.642612
+ ---- batch: 010 ----
+mean label_acc: 0.710807
+mean label_loss: 0.707038
+mean loss: 0.707038
+ ---- batch: 020 ----
+mean label_acc: 0.723692
+mean label_loss: 0.700193
+mean loss: 0.700193
+eval mean test_label_acc: 0.738675
+
+**** EPOCH 069, STEP 1725 ****
+Current epoch: 69, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:06:38.502380
+ ---- batch: 010 ----
+mean label_acc: 0.737775
+mean label_loss: 0.674783
+mean loss: 0.674783
+ ---- batch: 020 ----
+mean label_acc: 0.666632
+mean label_loss: 0.772269
+mean loss: 0.772269
+
+**** EPOCH 070, STEP 1750 ****
+Current epoch: 70, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:06:42.406839
+ ---- batch: 010 ----
+mean label_acc: 0.747312
+mean label_loss: 0.650298
+mean loss: 0.650298
+ ---- batch: 020 ----
+mean label_acc: 0.720800
+mean label_loss: 0.699225
+mean loss: 0.699225
+eval mean test_label_acc: 0.584705
+
+**** EPOCH 071, STEP 1775 ****
+Current epoch: 71, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:06:47.181318
+ ---- batch: 010 ----
+mean label_acc: 0.735027
+mean label_loss: 0.684120
+mean loss: 0.684120
+ ---- batch: 020 ----
+mean label_acc: 0.694085
+mean label_loss: 0.751350
+mean loss: 0.751350
+
+**** EPOCH 072, STEP 1800 ****
+Current epoch: 72, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:06:51.027526
+ ---- batch: 010 ----
+mean label_acc: 0.698665
+mean label_loss: 0.735213
+mean loss: 0.735213
+ ---- batch: 020 ----
+mean label_acc: 0.724112
+mean label_loss: 0.695137
+mean loss: 0.695137
+eval mean test_label_acc: 0.765805
+
+**** EPOCH 073, STEP 1825 ****
+Current epoch: 73, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:06:55.777188
+ ---- batch: 010 ----
+mean label_acc: 0.705427
+mean label_loss: 0.717601
+mean loss: 0.717601
+ ---- batch: 020 ----
+mean label_acc: 0.744240
+mean label_loss: 0.673590
+mean loss: 0.673590
+
+**** EPOCH 074, STEP 1850 ****
+Current epoch: 74, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:06:59.660677
+ ---- batch: 010 ----
+mean label_acc: 0.733035
+mean label_loss: 0.675320
+mean loss: 0.675320
+ ---- batch: 020 ----
+mean label_acc: 0.713982
+mean label_loss: 0.709922
+mean loss: 0.709922
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 075, STEP 1875 ****
+Current epoch: 75, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:07:04.459654
+ ---- batch: 010 ----
+mean label_acc: 0.698250
+mean label_loss: 0.733041
+mean loss: 0.733041
+ ---- batch: 020 ----
+mean label_acc: 0.719077
+mean label_loss: 0.723981
+mean loss: 0.723981
+
+**** EPOCH 076, STEP 1900 ****
+Current epoch: 76, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:07:08.327534
+ ---- batch: 010 ----
+mean label_acc: 0.744007
+mean label_loss: 0.678267
+mean loss: 0.678267
+ ---- batch: 020 ----
+mean label_acc: 0.728270
+mean label_loss: 0.692191
+mean loss: 0.692191
+eval mean test_label_acc: 0.651045
+
+**** EPOCH 077, STEP 1925 ****
+Current epoch: 77, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:07:13.064754
+ ---- batch: 010 ----
+mean label_acc: 0.707632
+mean label_loss: 0.735961
+mean loss: 0.735961
+ ---- batch: 020 ----
+mean label_acc: 0.717025
+mean label_loss: 0.708640
+mean loss: 0.708640
+
+**** EPOCH 078, STEP 1950 ****
+Current epoch: 78, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:07:16.985180
+ ---- batch: 010 ----
+mean label_acc: 0.698357
+mean label_loss: 0.735086
+mean loss: 0.735086
+ ---- batch: 020 ----
+mean label_acc: 0.738400
+mean label_loss: 0.690268
+mean loss: 0.690268
+eval mean test_label_acc: 0.733805
+
+**** EPOCH 079, STEP 1975 ****
+Current epoch: 79, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:07:21.792028
+ ---- batch: 010 ----
+mean label_acc: 0.687707
+mean label_loss: 0.733759
+mean loss: 0.733759
+ ---- batch: 020 ----
+mean label_acc: 0.725752
+mean label_loss: 0.694736
+mean loss: 0.694736
+
+**** EPOCH 080, STEP 2000 ****
+Current epoch: 80, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:07:25.692715
+ ---- batch: 010 ----
+mean label_acc: 0.691195
+mean label_loss: 0.748891
+mean loss: 0.748891
+ ---- batch: 020 ----
+mean label_acc: 0.715430
+mean label_loss: 0.712100
+mean loss: 0.712100
+eval mean test_label_acc: 0.761090
+
+**** EPOCH 081, STEP 2025 ****
+Current epoch: 81, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.031250
+2021-08-30 05:07:30.548628
+ ---- batch: 010 ----
+mean label_acc: 0.703910
+mean label_loss: 0.730276
+mean loss: 0.730276
+ ---- batch: 020 ----
+mean label_acc: 0.696712
+mean label_loss: 0.724325
+mean loss: 0.724325
+
+**** EPOCH 082, STEP 2050 ****
+Current epoch: 82, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.031250
+2021-08-30 05:07:34.396109
+ ---- batch: 010 ----
+mean label_acc: 0.674900
+mean label_loss: 0.782245
+mean loss: 0.782245
+ ---- batch: 020 ----
+mean label_acc: 0.736797
+mean label_loss: 0.685708
+mean loss: 0.685708
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 083, STEP 2075 ****
+Current epoch: 83, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.031250
+2021-08-30 05:07:39.194148
+ ---- batch: 010 ----
+mean label_acc: 0.692145
+mean label_loss: 0.751734
+mean loss: 0.751734
+ ---- batch: 020 ----
+mean label_acc: 0.732102
+mean label_loss: 0.698826
+mean loss: 0.698826
+
+**** EPOCH 084, STEP 2100 ****
+Current epoch: 84, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.031250
+2021-08-30 05:07:43.152213
+ ---- batch: 010 ----
+mean label_acc: 0.684015
+mean label_loss: 0.767145
+mean loss: 0.767145
+ ---- batch: 020 ----
+mean label_acc: 0.746605
+mean label_loss: 0.683436
+mean loss: 0.683436
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 085, STEP 2125 ****
+Current epoch: 85, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.031250
+2021-08-30 05:07:48.040372
+ ---- batch: 010 ----
+mean label_acc: 0.695857
+mean label_loss: 0.751829
+mean loss: 0.751829
+ ---- batch: 020 ----
+mean label_acc: 0.734625
+mean label_loss: 0.698450
+mean loss: 0.698450
+
+**** EPOCH 086, STEP 2150 ****
+Current epoch: 86, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.031250
+2021-08-30 05:07:52.050331
+ ---- batch: 010 ----
+mean label_acc: 0.715287
+mean label_loss: 0.712017
+mean loss: 0.712017
+ ---- batch: 020 ----
+mean label_acc: 0.725055
+mean label_loss: 0.709668
+mean loss: 0.709668
+eval mean test_label_acc: 0.760215
+
+**** EPOCH 087, STEP 2175 ****
+Current epoch: 87, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.031250
+2021-08-30 05:07:57.123531
+ ---- batch: 010 ----
+mean label_acc: 0.722792
+mean label_loss: 0.702298
+mean loss: 0.702298
+ ---- batch: 020 ----
+mean label_acc: 0.678510
+mean label_loss: 0.766416
+mean loss: 0.766416
+
+**** EPOCH 088, STEP 2200 ****
+Current epoch: 88, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.031250
+2021-08-30 05:08:01.160035
+ ---- batch: 010 ----
+mean label_acc: 0.751120
+mean label_loss: 0.675508
+mean loss: 0.675508
+ ---- batch: 020 ----
+mean label_acc: 0.711575
+mean label_loss: 0.730960
+mean loss: 0.730960
+eval mean test_label_acc: 0.769025
+
+**** EPOCH 089, STEP 2225 ****
+Current epoch: 89, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.031250
+2021-08-30 05:08:05.943726
+ ---- batch: 010 ----
+mean label_acc: 0.708105
+mean label_loss: 0.720876
+mean loss: 0.720876
+ ---- batch: 020 ----
+mean label_acc: 0.751915
+mean label_loss: 0.684618
+mean loss: 0.684618
+
+**** EPOCH 090, STEP 2250 ****
+Current epoch: 90, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.031250
+2021-08-30 05:08:09.862526
+ ---- batch: 010 ----
+mean label_acc: 0.692302
+mean label_loss: 0.756034
+mean loss: 0.756034
+ ---- batch: 020 ----
+mean label_acc: 0.725280
+mean label_loss: 0.701314
+mean loss: 0.701314
+eval mean test_label_acc: 0.771820
+
+**** EPOCH 091, STEP 2275 ****
+Current epoch: 91, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.031250
+2021-08-30 05:08:14.608128
+ ---- batch: 010 ----
+mean label_acc: 0.698435
+mean label_loss: 0.737927
+mean loss: 0.737927
+Namespace(batch_size='2,3', bn_decay_rate=0.5, bn_decay_step=20, cls_number=10, conf_thresh=0.05, dataset='sunrgbd', detector_checkpoint='none', ema_decay=0.999, eval=False, eval_interval=5, learning_rate=0.01, log_dir='./temp', lr_decay_rates='0.3, 0.3, 0.1, 0.1', lr_decay_steps='400, 600, 800, 900', max_epoch=1001, model='Pointnet2SSG', num_point=20000, print_interval=25, resume=False, save_interval=200, unlabeled_loss_weight=2.0, weight_decay=0)
+unlabeled_batch_size: 3
+dataset: sunrgbd
+remove_empty_box: False
+use_3d_nms: True
+nms_iou: 0.25
+use_old_type_nms: False
+cls_nms: True
+per_class_proposal: True
+conf_thresh: 0.05
+obj_threshold: 0.9
+cls_threshold: 0.9
+use_lhs: True
+iou_threshold: 0.25
+use_unlabeled_obj_loss: False
+use_unlabeled_vote_loss: False
+vote_loss_size_factor: 1.0
+samecls_match: False
+
+**** EPOCH 000, STEP 0 ****
+Current epoch: 0, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:08:58.914981
+
+**** EPOCH 001, STEP 5 ****
+Current epoch: 1, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:09:01.387418
+
+**** EPOCH 002, STEP 10 ****
+Current epoch: 2, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:09:03.427529
+
+**** EPOCH 003, STEP 15 ****
+Current epoch: 3, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:09:05.440539
+
+**** EPOCH 004, STEP 20 ****
+Current epoch: 4, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:09:07.502578
+
+**** EPOCH 005, STEP 25 ****
+Current epoch: 5, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:09:09.541628
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 006, STEP 30 ****
+Current epoch: 6, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:09:12.725412
+
+**** EPOCH 007, STEP 35 ****
+Current epoch: 7, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:09:14.734300
+
+**** EPOCH 008, STEP 40 ****
+Current epoch: 8, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:09:16.739337
+
+**** EPOCH 009, STEP 45 ****
+Current epoch: 9, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:09:18.907434
+
+**** EPOCH 010, STEP 50 ****
+Current epoch: 10, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:09:20.921540
+eval mean test_label_acc: 0.770925
+
+**** EPOCH 011, STEP 55 ****
+Current epoch: 11, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:09:23.898596
+
+**** EPOCH 012, STEP 60 ****
+Current epoch: 12, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:09:25.873768
+
+**** EPOCH 013, STEP 65 ****
+Current epoch: 13, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:09:27.943499
+
+**** EPOCH 014, STEP 70 ****
+Current epoch: 14, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:09:29.967632
+
+**** EPOCH 015, STEP 75 ****
+Current epoch: 15, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:09:31.940247
+Namespace(batch_size='2,3', bn_decay_rate=0.5, bn_decay_step=20, cls_number=10, conf_thresh=0.05, dataset='sunrgbd', detector_checkpoint='none', ema_decay=0.999, eval=False, eval_interval=5, learning_rate=0.01, log_dir='./temp', lr_decay_rates='0.3, 0.3, 0.1, 0.1', lr_decay_steps='400, 600, 800, 900', max_epoch=1001, model='Pointnet2SSG', num_point=20000, print_interval=5, resume=False, save_interval=200, unlabeled_loss_weight=2.0, weight_decay=0)
+unlabeled_batch_size: 3
+dataset: sunrgbd
+remove_empty_box: False
+use_3d_nms: True
+nms_iou: 0.25
+use_old_type_nms: False
+cls_nms: True
+per_class_proposal: True
+conf_thresh: 0.05
+obj_threshold: 0.9
+cls_threshold: 0.9
+use_lhs: True
+iou_threshold: 0.25
+use_unlabeled_obj_loss: False
+use_unlabeled_vote_loss: False
+vote_loss_size_factor: 1.0
+samecls_match: False
+
+**** EPOCH 000, STEP 0 ****
+Current epoch: 0, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:09:48.151888
+ ---- batch: 005 ----
+mean label_acc: 0.473980
+mean label_loss: 1.933052
+mean loss: 3.355139
+
+**** EPOCH 001, STEP 5 ****
+Current epoch: 1, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:09:50.506730
+ ---- batch: 005 ----
+mean label_acc: 0.561820
+mean label_loss: 1.360231
+mean loss: 2.705864
+
+**** EPOCH 002, STEP 10 ****
+Current epoch: 2, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:09:52.468226
+ ---- batch: 005 ----
+mean label_acc: 0.569475
+mean label_loss: 1.158063
+mean loss: 2.443036
+
+**** EPOCH 003, STEP 15 ****
+Current epoch: 3, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:09:54.529704
+ ---- batch: 005 ----
+mean label_acc: 0.654295
+mean label_loss: 0.882179
+mean loss: 2.026066
+
+**** EPOCH 004, STEP 20 ****
+Current epoch: 4, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:09:56.562260
+ ---- batch: 005 ----
+mean label_acc: 0.646530
+mean label_loss: 0.812896
+mean loss: 1.964703
+
+**** EPOCH 005, STEP 25 ****
+Current epoch: 5, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:09:58.630527
+ ---- batch: 005 ----
+mean label_acc: 0.672935
+mean label_loss: 0.810668
+mean loss: 1.912741
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 006, STEP 30 ****
+Current epoch: 6, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:10:01.684312
+ ---- batch: 005 ----
+mean label_acc: 0.669415
+mean label_loss: 0.806030
+mean loss: 1.857576
+
+**** EPOCH 007, STEP 35 ****
+Current epoch: 7, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:10:03.750413
+ ---- batch: 005 ----
+mean label_acc: 0.669050
+mean label_loss: 0.822358
+mean loss: 1.874475
+
+**** EPOCH 008, STEP 40 ****
+Current epoch: 8, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:10:05.838807
+ ---- batch: 005 ----
+mean label_acc: 0.668200
+mean label_loss: 0.793322
+mean loss: 1.851438
+
+**** EPOCH 009, STEP 45 ****
+Current epoch: 9, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:10:07.922752
+ ---- batch: 005 ----
+mean label_acc: 0.658075
+mean label_loss: 0.816947
+mean loss: 1.861537
+
+**** EPOCH 010, STEP 50 ****
+Current epoch: 10, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:10:09.967865
+ ---- batch: 005 ----
+mean label_acc: 0.669430
+mean label_loss: 0.783052
+mean loss: 1.829939
+eval mean test_label_acc: 0.769845
+
+**** EPOCH 011, STEP 55 ****
+Current epoch: 11, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:10:12.800173
+ ---- batch: 005 ----
+mean label_acc: 0.668840
+mean label_loss: 0.767390
+mean loss: 1.800644
+
+**** EPOCH 012, STEP 60 ****
+Current epoch: 12, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:10:14.752468
+ ---- batch: 005 ----
+mean label_acc: 0.669650
+mean label_loss: 0.798509
+mean loss: 1.823016
+
+**** EPOCH 013, STEP 65 ****
+Current epoch: 13, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:10:16.701208
+ ---- batch: 005 ----
+mean label_acc: 0.670360
+mean label_loss: 0.779058
+mean loss: 1.815685
+
+**** EPOCH 014, STEP 70 ****
+Current epoch: 14, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:10:18.716572
+ ---- batch: 005 ----
+mean label_acc: 0.673815
+mean label_loss: 0.788375
+mean loss: 1.836358
+
+**** EPOCH 015, STEP 75 ****
+Current epoch: 15, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:10:20.621263
+ ---- batch: 005 ----
+mean label_acc: 0.678240
+mean label_loss: 0.777774
+mean loss: 1.809141
+eval mean test_label_acc: 0.768085
+
+**** EPOCH 016, STEP 80 ****
+Current epoch: 16, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:10:23.470849
+ ---- batch: 005 ----
+mean label_acc: 0.679095
+mean label_loss: 0.762575
+mean loss: 1.814262
+
+**** EPOCH 017, STEP 85 ****
+Current epoch: 17, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:10:25.452606
+ ---- batch: 005 ----
+mean label_acc: 0.673610
+mean label_loss: 0.787316
+mean loss: 1.834406
+
+**** EPOCH 018, STEP 90 ****
+Current epoch: 18, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:10:27.489263
+ ---- batch: 005 ----
+mean label_acc: 0.671335
+mean label_loss: 0.784570
+mean loss: 1.863400
+
+**** EPOCH 019, STEP 95 ****
+Current epoch: 19, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:10:29.462726
+ ---- batch: 005 ----
+mean label_acc: 0.674265
+mean label_loss: 0.766279
+mean loss: 1.900136
+
+**** EPOCH 020, STEP 100 ****
+Current epoch: 20, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.500000
+2021-08-30 05:10:31.428436
+ ---- batch: 005 ----
+mean label_acc: 0.665995
+mean label_loss: 0.803606
+mean loss: 1.842149
+eval mean test_label_acc: 0.767670
+
+**** EPOCH 021, STEP 105 ****
+Current epoch: 21, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:10:34.581652
+ ---- batch: 005 ----
+mean label_acc: 0.669605
+mean label_loss: 0.797167
+mean loss: 1.825223
+
+**** EPOCH 022, STEP 110 ****
+Current epoch: 22, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:10:36.723348
+ ---- batch: 005 ----
+mean label_acc: 0.669600
+mean label_loss: 0.780603
+mean loss: 1.803020
+
+**** EPOCH 023, STEP 115 ****
+Current epoch: 23, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:10:38.805495
+ ---- batch: 005 ----
+mean label_acc: 0.669345
+mean label_loss: 0.787112
+mean loss: 1.805888
+
+**** EPOCH 024, STEP 120 ****
+Current epoch: 24, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:10:40.772721
+ ---- batch: 005 ----
+mean label_acc: 0.669120
+mean label_loss: 0.795747
+mean loss: 1.806610
+
+**** EPOCH 025, STEP 125 ****
+Current epoch: 25, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:10:42.819999
+ ---- batch: 005 ----
+mean label_acc: 0.666305
+mean label_loss: 0.786821
+mean loss: 1.799295
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 026, STEP 130 ****
+Current epoch: 26, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:10:45.739663
+ ---- batch: 005 ----
+mean label_acc: 0.660850
+mean label_loss: 0.785682
+mean loss: 1.808479
+
+**** EPOCH 027, STEP 135 ****
+Current epoch: 27, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:10:47.752306
+ ---- batch: 005 ----
+mean label_acc: 0.670510
+mean label_loss: 0.779181
+mean loss: 1.788421
+
+**** EPOCH 028, STEP 140 ****
+Current epoch: 28, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:10:49.720789
+ ---- batch: 005 ----
+mean label_acc: 0.668740
+mean label_loss: 0.777760
+mean loss: 1.781937
+
+**** EPOCH 029, STEP 145 ****
+Current epoch: 29, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:10:51.771646
+ ---- batch: 005 ----
+mean label_acc: 0.669500
+mean label_loss: 0.777809
+mean loss: 1.788742
+
+**** EPOCH 030, STEP 150 ****
+Current epoch: 30, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:10:53.954176
+ ---- batch: 005 ----
+mean label_acc: 0.670465
+mean label_loss: 0.786276
+mean loss: 1.793529
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 031, STEP 155 ****
+Current epoch: 31, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:10:56.801219
+ ---- batch: 005 ----
+mean label_acc: 0.673260
+mean label_loss: 0.757062
+mean loss: 1.785686
+
+**** EPOCH 032, STEP 160 ****
+Current epoch: 32, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:10:58.784157
+ ---- batch: 005 ----
+mean label_acc: 0.657140
+mean label_loss: 0.782213
+mean loss: 1.889519
+
+**** EPOCH 033, STEP 165 ****
+Current epoch: 33, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:11:00.798231
+ ---- batch: 005 ----
+mean label_acc: 0.662615
+mean label_loss: 0.790560
+mean loss: 1.814387
+
+**** EPOCH 034, STEP 170 ****
+Current epoch: 34, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:11:02.891701
+ ---- batch: 005 ----
+mean label_acc: 0.669445
+mean label_loss: 0.777409
+mean loss: 1.777955
+
+**** EPOCH 035, STEP 175 ****
+Current epoch: 35, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:11:04.842932
+ ---- batch: 005 ----
+mean label_acc: 0.668685
+mean label_loss: 0.783501
+mean loss: 1.786354
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 036, STEP 180 ****
+Current epoch: 36, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:11:07.861633
+ ---- batch: 005 ----
+mean label_acc: 0.668625
+mean label_loss: 0.783743
+mean loss: 1.787793
+
+**** EPOCH 037, STEP 185 ****
+Current epoch: 37, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:11:09.821969
+ ---- batch: 005 ----
+mean label_acc: 0.669715
+mean label_loss: 0.777082
+mean loss: 1.777245
+
+**** EPOCH 038, STEP 190 ****
+Current epoch: 38, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:11:11.756334
+ ---- batch: 005 ----
+mean label_acc: 0.669645
+mean label_loss: 0.799106
+mean loss: 1.799313
+
+**** EPOCH 039, STEP 195 ****
+Current epoch: 39, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:11:13.749777
+ ---- batch: 005 ----
+mean label_acc: 0.668710
+mean label_loss: 0.772996
+mean loss: 1.773316
+
+**** EPOCH 040, STEP 200 ****
+Current epoch: 40, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.250000
+2021-08-30 05:11:15.714241
+ ---- batch: 005 ----
+mean label_acc: 0.668345
+mean label_loss: 0.777056
+mean loss: 1.777259
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 041, STEP 205 ****
+Current epoch: 41, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:11:18.571545
+ ---- batch: 005 ----
+mean label_acc: 0.668865
+mean label_loss: 0.790210
+mean loss: 1.790283
+
+**** EPOCH 042, STEP 210 ****
+Current epoch: 42, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:11:20.594772
+ ---- batch: 005 ----
+mean label_acc: 0.669445
+mean label_loss: 0.781186
+mean loss: 1.784829
+
+**** EPOCH 043, STEP 215 ****
+Current epoch: 43, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:11:22.528157
+ ---- batch: 005 ----
+mean label_acc: 0.665710
+mean label_loss: 0.779107
+mean loss: 1.830170
+
+**** EPOCH 044, STEP 220 ****
+Current epoch: 44, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:11:24.603396
+ ---- batch: 005 ----
+mean label_acc: 0.658845
+mean label_loss: 0.790310
+mean loss: 1.816667
+
+**** EPOCH 045, STEP 225 ****
+Current epoch: 45, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:11:26.587550
+ ---- batch: 005 ----
+mean label_acc: 0.669595
+mean label_loss: 0.769625
+mean loss: 1.769649
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 046, STEP 230 ****
+Current epoch: 46, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:11:29.429914
+ ---- batch: 005 ----
+mean label_acc: 0.670120
+mean label_loss: 0.776307
+mean loss: 1.776540
+
+**** EPOCH 047, STEP 235 ****
+Current epoch: 47, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:11:31.325852
+ ---- batch: 005 ----
+mean label_acc: 0.662095
+mean label_loss: 0.786833
+mean loss: 1.802666
+
+**** EPOCH 048, STEP 240 ****
+Current epoch: 48, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:11:33.274351
+ ---- batch: 005 ----
+mean label_acc: 0.667370
+mean label_loss: 0.803872
+mean loss: 1.803935
+
+**** EPOCH 049, STEP 245 ****
+Current epoch: 49, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:11:35.300816
+ ---- batch: 005 ----
+mean label_acc: 0.669400
+mean label_loss: 0.785525
+mean loss: 1.817555
+
+**** EPOCH 050, STEP 250 ****
+Current epoch: 50, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:11:37.269778
+ ---- batch: 005 ----
+mean label_acc: 0.659065
+mean label_loss: 0.779054
+mean loss: 1.798557
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 051, STEP 255 ****
+Current epoch: 51, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:11:40.142083
+ ---- batch: 005 ----
+mean label_acc: 0.670015
+mean label_loss: 0.784719
+mean loss: 1.784789
+
+**** EPOCH 052, STEP 260 ****
+Current epoch: 52, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:11:42.057747
+ ---- batch: 005 ----
+mean label_acc: 0.668305
+mean label_loss: 0.784833
+mean loss: 1.784843
+
+**** EPOCH 053, STEP 265 ****
+Current epoch: 53, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:11:43.982206
+ ---- batch: 005 ----
+mean label_acc: 0.669225
+mean label_loss: 0.779687
+mean loss: 1.779690
+
+**** EPOCH 054, STEP 270 ****
+Current epoch: 54, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:11:45.926947
+ ---- batch: 005 ----
+mean label_acc: 0.669310
+mean label_loss: 0.776336
+mean loss: 1.776339
+
+**** EPOCH 055, STEP 275 ****
+Current epoch: 55, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:11:47.893584
+ ---- batch: 005 ----
+mean label_acc: 0.668865
+mean label_loss: 0.779345
+mean loss: 1.779348
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 056, STEP 280 ****
+Current epoch: 56, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:11:50.749732
+ ---- batch: 005 ----
+mean label_acc: 0.669370
+mean label_loss: 0.776188
+mean loss: 1.776191
+
+**** EPOCH 057, STEP 285 ****
+Current epoch: 57, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:11:52.737219
+ ---- batch: 005 ----
+mean label_acc: 0.668360
+mean label_loss: 0.777022
+mean loss: 1.777022
+
+**** EPOCH 058, STEP 290 ****
+Current epoch: 58, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:11:54.704431
+ ---- batch: 005 ----
+mean label_acc: 0.668815
+mean label_loss: 0.793762
+mean loss: 1.793762
+
+**** EPOCH 059, STEP 295 ****
+Current epoch: 59, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:11:56.762594
+ ---- batch: 005 ----
+mean label_acc: 0.668985
+mean label_loss: 0.785072
+mean loss: 1.785072
+
+**** EPOCH 060, STEP 300 ****
+Current epoch: 60, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.125000
+2021-08-30 05:11:58.779913
+ ---- batch: 005 ----
+mean label_acc: 0.668315
+mean label_loss: 0.772272
+mean loss: 1.772272
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 061, STEP 305 ****
+Current epoch: 61, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:12:01.626043
+ ---- batch: 005 ----
+mean label_acc: 0.668820
+mean label_loss: 0.790502
+mean loss: 1.790502
+
+**** EPOCH 062, STEP 310 ****
+Current epoch: 62, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:12:03.611559
+ ---- batch: 005 ----
+mean label_acc: 0.669510
+mean label_loss: 0.788623
+mean loss: 1.788623
+
+**** EPOCH 063, STEP 315 ****
+Current epoch: 63, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:12:05.602507
+ ---- batch: 005 ----
+mean label_acc: 0.669920
+mean label_loss: 0.774024
+mean loss: 1.774031
+
+**** EPOCH 064, STEP 320 ****
+Current epoch: 64, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:12:07.638173
+ ---- batch: 005 ----
+mean label_acc: 0.668895
+mean label_loss: 0.779726
+mean loss: 1.779736
+
+**** EPOCH 065, STEP 325 ****
+Current epoch: 65, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:12:09.611485
+ ---- batch: 005 ----
+mean label_acc: 0.672635
+mean label_loss: 0.777940
+mean loss: 1.789083
+eval mean test_label_acc: 0.767455
+
+**** EPOCH 066, STEP 330 ****
+Current epoch: 66, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:12:12.426942
+ ---- batch: 005 ----
+mean label_acc: 0.664635
+mean label_loss: 0.772231
+mean loss: 1.803251
+
+**** EPOCH 067, STEP 335 ****
+Current epoch: 67, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:12:14.402017
+ ---- batch: 005 ----
+mean label_acc: 0.667595
+mean label_loss: 0.757055
+mean loss: 1.761631
+
+**** EPOCH 068, STEP 340 ****
+Current epoch: 68, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:12:16.366020
+ ---- batch: 005 ----
+mean label_acc: 0.672120
+mean label_loss: 0.790005
+mean loss: 1.799359
+
+**** EPOCH 069, STEP 345 ****
+Current epoch: 69, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:12:18.345004
+ ---- batch: 005 ----
+mean label_acc: 0.675815
+mean label_loss: 0.760558
+mean loss: 1.767628
+
+**** EPOCH 070, STEP 350 ****
+Current epoch: 70, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:12:20.304605
+ ---- batch: 005 ----
+mean label_acc: 0.668905
+mean label_loss: 0.785872
+mean loss: 1.791499
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 071, STEP 355 ****
+Current epoch: 71, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:12:23.159480
+ ---- batch: 005 ----
+mean label_acc: 0.669905
+mean label_loss: 0.770859
+mean loss: 1.770899
+
+**** EPOCH 072, STEP 360 ****
+Current epoch: 72, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:12:25.121621
+ ---- batch: 005 ----
+mean label_acc: 0.650065
+mean label_loss: 0.778387
+mean loss: 1.794753
+
+**** EPOCH 073, STEP 365 ****
+Current epoch: 73, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:12:27.107016
+ ---- batch: 005 ----
+mean label_acc: 0.666145
+mean label_loss: 0.765615
+mean loss: 1.789375
+
+**** EPOCH 074, STEP 370 ****
+Current epoch: 74, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:12:29.041435
+ ---- batch: 005 ----
+mean label_acc: 0.669130
+mean label_loss: 0.755335
+mean loss: 1.755371
+
+**** EPOCH 075, STEP 375 ****
+Current epoch: 75, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:12:31.027654
+ ---- batch: 005 ----
+mean label_acc: 0.666760
+mean label_loss: 0.757496
+mean loss: 1.778373
+eval mean test_label_acc: 0.767815
+
+**** EPOCH 076, STEP 380 ****
+Current epoch: 76, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:12:33.827788
+ ---- batch: 005 ----
+mean label_acc: 0.654740
+mean label_loss: 0.770450
+mean loss: 1.812787
+
+**** EPOCH 077, STEP 385 ****
+Current epoch: 77, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:12:36.084673
+ ---- batch: 005 ----
+mean label_acc: 0.670235
+mean label_loss: 0.771256
+mean loss: 1.772899
+
+**** EPOCH 078, STEP 390 ****
+Current epoch: 78, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:12:38.003824
+ ---- batch: 005 ----
+mean label_acc: 0.667300
+mean label_loss: 0.771998
+mean loss: 1.772668
+
+**** EPOCH 079, STEP 395 ****
+Current epoch: 79, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:12:40.122303
+ ---- batch: 005 ----
+mean label_acc: 0.668420
+mean label_loss: 0.770069
+mean loss: 1.771059
+
+**** EPOCH 080, STEP 400 ****
+Current epoch: 80, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.062500
+2021-08-30 05:12:42.122574
+ ---- batch: 005 ----
+mean label_acc: 0.677700
+mean label_loss: 0.745727
+mean loss: 1.802783
+eval mean test_label_acc: 0.765785
+
+**** EPOCH 081, STEP 405 ****
+Current epoch: 81, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.031250
+2021-08-30 05:12:45.060926
+ ---- batch: 005 ----
+mean label_acc: 0.644225
+mean label_loss: 0.781645
+mean loss: 1.882802
+
+**** EPOCH 082, STEP 410 ****
+Current epoch: 82, obj threshold = 0.900 & cls threshold = 0.900
+Current learning rate: 0.010000
+Current BN decay momentum: 0.031250
+2021-08-30 05:12:47.145269
